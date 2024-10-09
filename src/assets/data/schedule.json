@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "data": [
+    {
+      "date": "2024-10-14",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "Attendes Travel Day & Sr Leadership Meeting",
+          "allDay": true
+        },
+        {
+          "time": "10:00",
+          "duration": "8:00",
+          "title": "Opening Ceremony",
+          "description": "The opening ceremony of the conference."
+        },
+        {
+          "time": "11:00",
+          "title": "Keynote Speaker",
+          "description": "A keynote speaker will present on the topic of the conference."
+        }
+      ]
+    }
+  ]
+}
