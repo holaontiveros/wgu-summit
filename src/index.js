@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, Explore, Help } from "routes";
+import { Home, Explore, Help, Egg } from "routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/help",
         element: <Help />,
+      },
+      {
+        path: "/egg",
+        element: <Egg />,
       },
     ],
   },

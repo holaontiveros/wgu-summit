@@ -25,12 +25,8 @@ const Explore = () => {
         setSlidesPerView(1.5);
       } else if (window.innerWidth < 480) {
         setSlidesPerView(1.6);
-      } else if (window.innerWidth < 768) {
-        setSlidesPerView(2.5);
-      } else if (window.innerWidth < 1024) {
-        setSlidesPerView(3.5);
       } else {
-        setSlidesPerView(4.5);
+        setSlidesPerView(3);
       }
     };
 
