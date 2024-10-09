@@ -11,7 +11,11 @@ const Place = ({ place }) => {
         <div className="relative p-2">
           <h3 className="top-[120px] text-sm font-bold">{place.name}</h3>
           <p>{place.description}</p>
-          <a className="text-secondary-500 text-sm underline" href={place.link}>
+          <a
+            className="text-sm text-secondary-500 underline"
+            target="_blank"
+            href={place.link}
+          >
             {place.linkTitle}
           </a>
         </div>
