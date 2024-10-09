@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex flex-col pb-32">
+    <div className="bg-primary-250 flex min-h-screen flex-col pb-32">
       <Outlet />
       <Footer />
     </div>

@@ -47,7 +47,17 @@ const radialGradientPlugin = plugin(
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          250: "#F4F9FB",
+          500: "#022A4D",
+        },
+        secondary: {
+          500: "#217AAE",
+        },
+      },
+    },
     // font family for everything would be Open sans
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
