@@ -9,15 +9,15 @@ function Home() {
   return (
     <div>
       <div className="absolute min-h-[400px] w-full bg-[url('assets/images/home-hero-wgu-summit.jpg')] bg-cover bg-center bg-no-repeat after:absolute after:top-0 after:z-0 after:h-full after:w-full after:bg-gradient-to-b after:from-transparent after:to-black"></div>
-      <div className="container relative z-10 mx-auto flex flex-col gap-4 px-4 py-6 pt-44 text-white">
+      <div className="container relative z-10 mx-auto flex flex-col gap-4 px-6 py-6 pt-44 text-white">
         <img src={wguLogo} alt="WGU Logo" className="w-32" />
         <h1 className="headline-1">Guadalajara Summit</h1>
         <p className="headline-2 !font-normal">{new Date().toDateString()}</p>
-        <div className="mb-6 rounded-lg bg-white bg-opacity-90 px-4 py-3">
+        <div className="mb-4 rounded-lg bg-white bg-opacity-90 px-6 py-3">
           <WeatherWidget />
         </div>
       </div>
-      <div className="container mx-auto flex flex-col gap-2 px-4">
+      <div className="container mx-auto flex flex-col gap-2 bg-white px-6 pt-8">
         <h3 className="headline-3 text-blue-950">Welcome to WIS Summit!</h3>
         <p>
           We're pleased to have you join us in Guadalajara for four days of
@@ -33,7 +33,7 @@ function Home() {
         className="my-6"
       />
 
-      <div className="container mx-auto flex flex-col gap-2 px-4">
+      <div className="container mx-auto flex flex-col gap-2 px-6">
         <h3 className="headline-3 text-blue-950">
           Guadalajara, La Perla Tapatía
         </h3>
@@ -54,7 +54,7 @@ function Home() {
       <div className="bg-blue-950">
         <img src={heroImage3} alt="Guadalajara, Jalisco" className="mt-6" />
         <div className="container">
-          <div className="flex flex-col gap-2 px-4 py-6 text-white">
+          <div className="flex flex-col gap-2 px-6 py-6 text-white">
             <h3 className="headline-3">Guadalajara's Rhythm</h3>
             <p>
               Experience the rhythm of Guadalajara with this handpicked playlist
