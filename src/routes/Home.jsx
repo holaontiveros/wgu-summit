@@ -66,7 +66,11 @@ function Home() {
               Experience the rhythm of Guadalajara with this handpicked playlist
               of local bands.
             </p>
-            <a href="#" target="_blank" className="btn btn-link">
+            <a
+              href="https://open.spotify.com/playlist/4WLApWE34EOB4nmGJcnydm?si=5a8dbc4e414f47eb"
+              target="_blank"
+              className="btn btn-link"
+            >
               Listen now
             </a>
           </div>
