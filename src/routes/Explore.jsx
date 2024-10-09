@@ -20,7 +20,7 @@ const Explore = () => {
 
       <div className="">
         {exploreData.map((item, index) => (
-          <div key={index} className="flex flex-col gap-4 px-6 py-4">
+          <div key={index} className="flex flex-col gap-4 px-6">
             <h2 className="text-primary-500 text-xl font-bold">{item.title}</h2>
 
             <div>
