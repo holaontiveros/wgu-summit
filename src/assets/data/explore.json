@@ -18,8 +18,20 @@
         },
         {
           "name": "Carne en su jugo Kamilos",
-          "hero": "explore/tortas-ahogadas-tono.jpg",
-          "linkTitle": "Find the nearest location",
+          "hero": "explore/carne-en-su-jugo-camilo.jpg",
+          "linkTitle": "Orozco 333",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Birria Pepe el Torito",
+          "hero": "explore/birria-pepe.jpg",
+          "linkTitle": "Manuel Acuña 1542",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Arturo El Amigo Barbacoa",
+          "hero": "explore/arturo-el-amigo-barbacoa.jpg",
+          "linkTitle": "Plan de San Luis 1522",
           "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
         }
       ]
@@ -28,21 +40,27 @@
       "title": "Art and Culture",
       "places": [
         {
-          "name": "Tortas Ahogadas Toño",
-          "hero": "explore/tortas-ahogadas-tono.jpg",
-          "linkTitle": "Find the nearest location",
+          "name": "Museo Cabañas",
+          "hero": "explore/museo-cabanas.jpg",
+          "linkTitle": "C. Cabañas 8",
           "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
         },
         {
-          "name": "Taco Fish La Paz",
-          "hero": "explore/taco-fish-la-paz.jpg",
-          "linkTitle": "Find the nearest location",
+          "name": "Guadalajara Cathedral",
+          "hero": "explore/guadalajara-cathedral.jpg",
+          "linkTitle": "Fray Antonio Alcalde 10",
           "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
         },
         {
-          "name": "Carne en su jugo Kamilos",
-          "hero": "explore/tortas-ahogadas-tono.jpg",
-          "linkTitle": "Find the nearest location",
+          "name": "Teatro Degollado",
+          "hero": "explore/teatro-degollado.jpg",
+          "linkTitle": "C. Degollado s/n",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "MUSA Art Museum",
+          "hero": "explore/musa-art-museum.jpg",
+          "linkTitle": "Av Juárez 975",
           "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
         }
       ]
@@ -51,21 +69,21 @@
       "title": "Magical Towns",
       "places": [
         {
-          "name": "Tortas Ahogadas Toño",
-          "hero": "explore/tortas-ahogadas-tono.jpg",
-          "linkTitle": "Find the nearest location",
+          "name": "Tequila",
+          "hero": "explore/tequila.jpg",
+          "linkTitle": "See location",
           "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
         },
         {
-          "name": "Taco Fish La Paz",
-          "hero": "explore/taco-fish-la-paz.jpg",
-          "linkTitle": "Find the nearest location",
+          "name": "Mazamitla",
+          "hero": "explore/mazamitla.jpg",
+          "linkTitle": "See location",
           "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
         },
         {
-          "name": "Carne en su jugo Kamilos",
-          "hero": "explore/tortas-ahogadas-tono.jpg",
-          "linkTitle": "Find the nearest location",
+          "name": "Tapalpa",
+          "hero": "explore/tapalpa.jpg",
+          "linkTitle": "See location",
           "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
         }
       ]
