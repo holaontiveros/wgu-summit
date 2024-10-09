@@ -4,8 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "routes/Home";
-import Explore from "routes/Explore";
+import { Home, Explore, Help } from "routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -28,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/help",
-        element: <App />,
+        element: <Help />,
       },
     ],
   },
