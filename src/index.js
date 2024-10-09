@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "routes/Home";
 import Footer from "components/Footer";
 import Agenda from "routes/Agenda";
+import Explore from "routes/Explore";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/explore",
-        element: <App />,
+        element: <Explore />,
       },
       {
         path: "/help",
