@@ -1,6 +1,8 @@
 import React from "react";
 import { createContext, useState } from "react";
+import Header from "components/Header";
 import DayPicker from "components/agenda/DayPicker";
+import CalendarList from "components/agenda/CalendarList";
 
 export const AgendaContext = createContext(null);
 
@@ -8,7 +10,9 @@ function Agenda() {
   const [currentDay, setCurrentDay] = useState(0);
 
   return (
-    <div className="h-screen bg-slate-100">
+    <div>
+      <Header title="Summit Agenda" />
+
       <AgendaContext.Provider
         value={{
           currentDay,
@@ -16,6 +20,7 @@ function Agenda() {
         }}
       >
         <DayPicker></DayPicker>
+        <CalendarList></CalendarList>
       </AgendaContext.Provider>
     </div>
   );
