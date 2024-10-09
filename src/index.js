@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "routes/Home";
 import Footer from "components/Footer";
+import Agenda from "routes/Agenda";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/agenda",
-        element: <App />,
+        element: <Agenda />,
       },
       {
         path: "/explore",
