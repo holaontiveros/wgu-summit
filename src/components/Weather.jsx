@@ -2,16 +2,15 @@ import React, { useState, useEffect } from "react";
 
 const WeatherWidget = () => {
   const [weather, setWeather] = useState(null);
+  const WeatherKeyEnv = process.env.REACT_APP_WEATHER_API_KEY;
 
   useEffect(() => {
     fetch(
-      "https://api.weatherapi.com/v1/forecast.json?key=d22c8453c46e4ac1811125722240910&q=Guadalajara&days=4&aqi=no&alerts=no",
+      `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
     )
       .then((response) => response.json())
       .then((data) => setWeather(data));
   }, []);
-
-  console.log(weather);
 
   const getParsedDate = (date) => {
     const parsedDate = new Date(date);

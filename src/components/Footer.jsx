@@ -24,8 +24,11 @@ function Footer() {
             <li key={index} className="mx-2">
               <NavLink
                 to={item.href}
-                activeClassName="!text-blue-700"
-                className="flex flex-col uppercase text-gray-700 hover:text-blue-800"
+                className={({ isActive, isPending }) =>
+                  isActive
+                    ? "flex flex-col uppercase text-blue-700 hover:text-blue-800"
+                    : "flex flex-col uppercase text-gray-700 hover:text-blue-800"
+                }
               >
                 {item.icon && <item.icon className="mx-auto h-6 w-6" />}
                 {item.name}
