@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "routes/Home";
-import Footer from "components/Footer";
+import Explore from "routes/Explore";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/explore",
-        element: <App />,
+        element: <Explore />,
       },
       {
         path: "/help",

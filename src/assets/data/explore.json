@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "data": [
+    {
+      "title": "Streed Food",
+      "places": [
+        {
+          "name": "Tortas Ahogadas Toño",
+          "hero": "explore/tortas-ahogadas-tono.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Taco Fish La Paz",
+          "hero": "explore/taco-fish-la-paz.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Carne en su jugo Kamilos",
+          "hero": "explore/tortas-ahogadas-tono.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        }
+      ]
+    },
+    {
+      "title": "Art and Culture",
+      "places": [
+        {
+          "name": "Tortas Ahogadas Toño",
+          "hero": "explore/tortas-ahogadas-tono.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Taco Fish La Paz",
+          "hero": "explore/taco-fish-la-paz.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Carne en su jugo Kamilos",
+          "hero": "explore/tortas-ahogadas-tono.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        }
+      ]
+    },
+    {
+      "title": "Magical Towns",
+      "places": [
+        {
+          "name": "Tortas Ahogadas Toño",
+          "hero": "explore/tortas-ahogadas-tono.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Taco Fish La Paz",
+          "hero": "explore/taco-fish-la-paz.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        },
+        {
+          "name": "Carne en su jugo Kamilos",
+          "hero": "explore/tortas-ahogadas-tono.jpg",
+          "linkTitle": "Find the nearest location",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tortas+Ahogadas+Toño"
+        }
+      ]
+    }
+  ]
+}

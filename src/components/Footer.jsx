@@ -17,7 +17,7 @@ const menuItems = [
 
 function Footer() {
   return (
-    <footer className="fixed bottom-0 w-full border-t border-gray-400 bg-white">
+    <footer className="fixed bottom-0 z-20 w-full border-t border-gray-200 bg-white">
       <div className="container mx-auto p-4">
         <ul className="flex justify-between">
           {menuItems.map((item, index) => (
