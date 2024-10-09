@@ -6,19 +6,41 @@ import {
   MapPinIcon,
   QuestionMarkCircleIcon,
 } from "@heroicons/react/24/outline";
+
+import {
+  HomeIcon as HomeIconFilled,
+  CalendarIcon as CalendarIconFilled,
+  MapPinIcon as MapPinIconFilled,
+  QuestionMarkCircleIcon as QuestionMarkCircleIconFilled,
+} from "@heroicons/react/24/solid";
 import { NavLink } from "react-router-dom";
 
 const menuItems = [
-  { name: "Home", href: "/", icon: HomeIcon },
-  { name: "Agenda", href: "/agenda", icon: CalendarIcon },
-  { name: "Explore", href: "/explore", icon: MapPinIcon },
-  { name: "Help", href: "/help", icon: QuestionMarkCircleIcon },
+  { name: "Home", href: "/", icon: HomeIcon, iconFilled: HomeIconFilled },
+  {
+    name: "Agenda",
+    href: "/agenda",
+    icon: CalendarIcon,
+    iconFilled: CalendarIconFilled,
+  },
+  {
+    name: "Explore",
+    href: "/explore",
+    icon: MapPinIcon,
+    iconFilled: MapPinIconFilled,
+  },
+  {
+    name: "Help",
+    href: "/help",
+    icon: QuestionMarkCircleIcon,
+    iconFilled: QuestionMarkCircleIconFilled,
+  },
 ];
 
 function Footer() {
   return (
-    <footer className="fixed bottom-0 z-20 w-full border-t border-gray-200 bg-white">
-      <div className="container mx-auto p-4">
+    <footer className="sticky bottom-0 z-20 w-full border-t border-gray-200 bg-white">
+      <div className="container mx-auto px-8 py-2">
         <ul className="flex justify-between">
           {menuItems.map((item, index) => (
             <li key={index} className="mx-2">
@@ -26,12 +48,22 @@ function Footer() {
                 to={item.href}
                 className={({ isActive, isPending }) =>
                   isActive
-                    ? "flex flex-col uppercase text-blue-700 hover:text-blue-800"
-                    : "flex flex-col uppercase text-gray-700 hover:text-blue-800"
+                    ? "flex flex-col uppercase text-primary-500"
+                    : "flex flex-col uppercase text-gray-700"
                 }
               >
-                {item.icon && <item.icon className="mx-auto h-6 w-6" />}
-                {item.name}
+                {({ isActive }) => (
+                  <>
+                    {isActive ? (
+                      <item.iconFilled className="mx-auto h-6 w-6" />
+                    ) : (
+                      <item.icon className="mx-auto h-6 w-6" />
+                    )}
+                    <span className="mt-1 text-center text-xs tracking-widest text-slate-500">
+                      {item.name}
+                    </span>
+                  </>
+                )}
               </NavLink>
             </li>
           ))}
