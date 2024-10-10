@@ -16,17 +16,18 @@ const WeatherWidget = () => {
 
     fetchStoredWeather();
 
-    fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setWeather(data);
-        localForage.setItem("weather", data);
-      })
-      .catch((error) => {
-        console.error("Error fetching weather data", error);
-      });
+    try {
+      fetch(
+        `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setWeather(data);
+          localForage.setItem("weather", data);
+        });
+    } catch (error) {
+      console.error("Error fetching weather data", error);
+    }
 
     setIsLoading(false);
   }, [WeatherKeyEnv]);
