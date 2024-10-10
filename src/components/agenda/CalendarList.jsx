@@ -37,7 +37,7 @@ function CalendarTags({ tags }) {
     tags = [];
   }
 
-  return (
+  return tags.length ? (
     <div className="flex flex-row pt-4">
       {tags.map((tag) => {
         let borderColor = "border-gray-300";
@@ -64,7 +64,7 @@ function CalendarTags({ tags }) {
         );
       })}
     </div>
-  );
+  ) : null;
 }
 
 function CalendarEvent({ event }) {
@@ -90,7 +90,9 @@ function CalendarEvent({ event }) {
           className={clsx(
             color,
             "mr-4 h-full rounded-lg",
-            event.allDay ? "w-2 border-2 border-gray-300" : "w-1.5 border-0",
+            event.allDay
+              ? "min-w-2 border-2 border-gray-300"
+              : "min-w-1.5 border-0",
           )}
         ></div>
         <div>
