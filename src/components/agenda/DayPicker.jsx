@@ -17,6 +17,7 @@ function DayPicker() {
     <div className="grid grid-cols-4 gap-4 pb-2 pl-6 pr-6 pt-2 text-gray-500">
       {days.map((day, i) => (
         <button
+          key={i}
           className={clsx(
             "rounded-lg border-2 bg-white pb-3 pt-3 text-center text-lg",
             currentDay === i
