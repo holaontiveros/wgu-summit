@@ -1,24 +1,438 @@
 {
   "version": "1.0",
+  "tags": [
+    { "name": "GENERAL", "color": "gray" },
+    { "name": "MEAL", "color": "green" },
+    { "name": "SOCIAL", "color": "yellow" }
+  ],
   "data": [
     {
       "date": "2024-10-14",
-      "events": [
+      "blocks": [
         {
-          "time": "08:00",
-          "title": "Attendes Travel Day & Sr Leadership Meeting",
-          "allDay": true
+          "name": "",
+          "events": [
+            {
+              "time": "8:00 a.m.",
+              "title": "Attendees Travel Day & Sr Leadership Meeting",
+              "allDay": true
+            }
+          ]
         },
         {
-          "time": "10:00",
-          "duration": "8:00",
-          "title": "Opening Ceremony",
-          "description": "The opening ceremony of the conference."
+          "name": "",
+          "events": [
+            {
+              "time": "2:00 p.m.",
+              "duration": "8 h",
+              "title": "Attendes Check-in",
+              "description": "RIU Plaza Hotel - Front Desk",
+              "color": "gray",
+              "tags": ["GENERAL"]
+            },
+            {
+              "time": "2:00 p.m.",
+              "duration": "3 h",
+              "title": "Boxed Dinner Pick Up",
+              "description": "RIU Plaza Hotel - Front Desk",
+              "color": "green",
+              "tags": ["MEAL"]
+            },
+            {
+              "time": "7:00 p.m.",
+              "duration": "2 h",
+              "title": "Welcome Reception",
+              "description": "RIU Plaza Hotel - Salón Vallarta",
+              "color": "yellow",
+              "tags": ["SOCIAL"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-10-15",
+      "blocks": [
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "7:30 a.m.",
+              "duration": "1 h 15 m",
+              "title": "Breakfast",
+              "description": "RIU Plaza Hotel - Decapolis Restaurant",
+              "color": "green",
+              "tags": ["MEAL"]
+            }
+          ]
         },
         {
-          "time": "11:00",
-          "title": "Keynote Speaker",
-          "description": "A keynote speaker will present on the topic of the conference."
+          "name": "Presentation Block Starts",
+          "events": [
+            {
+              "time": "9:00 a.m.",
+              "duration": "10 m",
+              "title": "Welcome",
+              "description": "RIU Plaza Hotel - Guadalajara Room 6-9",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "9:10 a.m.",
+              "duration": "5 m",
+              "title": "Cultural Belief Story",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "9:15 a.m.",
+              "duration": "5 m",
+              "title": "Video",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "9:20 a.m.",
+              "duration": "1 h",
+              "title": "Davey Disco",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "10:20 a.m.",
+              "duration": "5 m",
+              "title": "Moroni",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "10:25 a.m.",
+              "duration": "15 m",
+              "title": "David Opening",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "10:40 a.m.",
+              "duration": "5 m",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            },
+            {
+              "time": "10:45 a.m.",
+              "duration": "1 h 15 m",
+              "title": "Round Table Discussions with Leadership",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            }
+          ]
+        },
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "12:00 p.m.",
+              "duration": "1 h",
+              "title": "Lunch",
+              "description": "RIU Plaza Hotel - Decapolis Restaurant",
+              "color": "green",
+              "tags": ["MEAL"]
+            }
+          ]
+        },
+        {
+          "name": "Initiatives & Programs Block Starts",
+          "events": [
+            {
+              "time": "1:00 p.m.",
+              "duration": "25 m",
+              "title": "Unified Enrollment Experience",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "1:25 p.m.",
+              "duration": "25 m",
+              "title": "Adaptive Learning Experience",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "1:50 p.m.",
+              "duration": "25 m",
+              "title": "Graduate & Alumni Experience",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "2:15 p.m.",
+              "duration": "25 m",
+              "title": "Q&A",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            }
+          ]
+        },
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "2:40 p.m.",
+              "duration": "20 m",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            },
+            {
+              "time": "3:00 p.m.",
+              "duration": "1 h 45 m",
+              "title": "Area Specific Time",
+              "description": "RIU Plaza Hotel - Breakouts",
+              "color": "gray",
+              "tags": ["GENERAL"]
+            },
+            {
+              "time": "4:45 p.m.",
+              "duration": "15 m",
+              "title": "Closing Remarks",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "5:00 p.m.",
+              "duration": "30 m",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            },
+            {
+              "time": "5:30 p.m.",
+              "duration": "30 m",
+              "title": "Meet to board bus to Tlaquepaque",
+              "description": "RIU Plaza Hotel - Lobby",
+              "color": "yellow",
+              "tags": ["SOCIAL"]
+            },
+            {
+              "time": "6:00 p.m.",
+              "duration": "3 h",
+              "title": "Dinner",
+              "description": "El Abajeño - View Location",
+              "link": "https://example.com",
+              "color": "green",
+              "tags": ["MEAL"]
+            },
+            {
+              "time": "9:00 p.m.",
+              "duration": "20 m",
+              "title": "Bus to Hotel",
+              "description": "El Abajeño Restaurant",
+              "color": "yellow",
+              "tags": ["SOCIAL"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-10-16",
+      "blocks": [
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "7:30 a.m.",
+              "duration": "1 h 15 m",
+              "title": "Breakfast",
+              "description": "RIU Plaza Hotel - Decapolis Restaurant",
+              "color": "green",
+              "tags": ["MEAL"]
+            },
+            {
+              "time": "9:00 a.m.",
+              "duration": "15 m",
+              "title": "Welcome",
+              "description": "RIU Plaza Hotel - Guadalajara Room 6-9",
+              "color": "blue",
+              "tags": []
+            }
+          ]
+        },
+        {
+          "name": "Initiatives & Programs Block Starts",
+          "events": [
+            {
+              "time": "9:15 a.m.",
+              "duration": "25 m",
+              "title": "Enterprise Enablement",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "9:40 a.m.",
+              "duration": "20 m",
+              "title": "Q&A",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            }
+          ]
+        },
+        {
+          "name": "Presentation Block Starts",
+          "events": [
+            {
+              "time": "10:00 a.m.",
+              "duration": "30 m",
+              "title": "Evan, Kirk and Gisela",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "10:30 a.m.",
+              "duration": "15 m",
+              "title": "Q&A",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "10:45 a.m.",
+              "duration": "15 m",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            },
+            {
+              "time": "11:00 a.m.",
+              "duration": "1 h",
+              "title": "David Closing and Panel with VP’s for Q&A",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "12:00 p.m.",
+              "duration": "30 m",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            }
+          ]
+        },
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "12:30 p.m.",
+              "duration": "30 m",
+              "title": "Meet to board bus to Bowling and Lunch",
+              "description": "RIU Plaza Hotel - Lobby",
+              "color": "yellow",
+              "tags": ["SOCIAL"]
+            },
+            {
+              "time": "1:00 p.m.",
+              "duration": "2 h 30 m",
+              "title": "Bowling and Lunch",
+              "description": "Magno Boliches - View Location",
+              "link": "https://maps.app.goo.gl/yN3zn9C1ofDsFjCx6",
+              "color": "green",
+              "tags": ["MEAL", "SOCIAL"]
+            },
+            {
+              "time": "3:30 p.m.",
+              "duration": "30 m",
+              "title": "Bus to Hotel",
+              "description": "Magno Boliches",
+              "color": "yellow",
+              "tags": ["SOCIAL"]
+            },
+            {
+              "time": "4:00 p.m.",
+              "duration": "1 h",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            }
+          ]
+        },
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "5:00 p.m.",
+              "duration": "30 m",
+              "title": "Meet to board bus to Dinner",
+              "description": "RIU Plaza Hotel - Lobby",
+              "color": "yellow",
+              "tags": ["SOCIAL"]
+            },
+            {
+              "time": "5:30 p.m.",
+              "duration": "2 h",
+              "title": "Dinner",
+              "description": "La Tequila - View Location",
+              "color": "green",
+              "tags": ["MEAL"]
+            },
+            {
+              "time": "7:30 p.m.",
+              "duration": "30 m",
+              "title": "Bus to Hotel",
+              "description": "La Tequila Restaurant",
+              "color": "yellow",
+              "tags": ["SOCIAL"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2024-10-17",
+      "blocks": [
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "5:00 a.m.",
+              "title": "Attendees & Sr Leadership Travel Day",
+              "allDay": true
+            }
+          ]
+        },
+        {
+          "name": "",
+          "events": [
+            {
+              "time": "7:30 a.m.",
+              "duration": "1 h 15 m",
+              "title": "Breakfast",
+              "description": "RIU Plaza Hotel - Restaurant",
+              "color": "green",
+              "tags": ["MEAL"]
+            }
+          ]
         }
       ]
     }
