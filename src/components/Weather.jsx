@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import * as localForage from "localforage";
 
 const WeatherWidget = () => {
   const [weather, setWeather] = useState(null);
@@ -6,11 +7,26 @@ const WeatherWidget = () => {
   const WeatherKeyEnv = process.env.REACT_APP_WEATHER_API_KEY;
 
   useEffect(() => {
+    const fetchStoredWeather = async () => {
+      const storedWeather = await localForage.getItem("weather");
+      if (storedWeather) {
+        setWeather(storedWeather);
+      }
+    };
+
+    fetchStoredWeather();
+
     fetch(
       `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
     )
       .then((response) => response.json())
-      .then((data) => setWeather(data));
+      .then((data) => {
+        setWeather(data);
+        localForage.setItem("weather", data);
+      })
+      .catch((error) => {
+        console.error("Error fetching weather data", error);
+      });
 
     setIsLoading(false);
   }, [WeatherKeyEnv]);
