@@ -16,25 +16,25 @@ const WeatherWidget = () => {
 
     fetchStoredWeather();
 
-    try {
-      fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          setWeather(data);
-          localForage.setItem("weather", data);
-        });
-    } catch (error) {
-      console.error("Error fetching weather data", error);
-    }
+    fetch(
+      `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setWeather(data);
+        localForage.setItem("weather", data);
+      })
+      .catch((error) => {
+        console.log("Error while fetching weather data");
+      });
 
     setIsLoading(false);
   }, [WeatherKeyEnv]);
 
   const getParsedDate = (date) => {
-    const parsedDate = new Date(date);
+    const parsedDate = new Date(date.replace(/-/g, "/"));
     // return formated date as "Mon 01" Weekday and day of the month
+    // console.log(parsedDate.toDateString());
     return `${parsedDate.toDateString().slice(0, 3)} ${parsedDate.getDate()}`;
   };
 

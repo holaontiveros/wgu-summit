@@ -3,6 +3,7 @@ import wguLogo from "assets/images/wgu-logo.svg";
 import heroImage2 from "assets/images/hero-home-2.jpg";
 import heroImage3 from "assets/images/home-hero-3.jpg";
 import WeatherWidget from "components/Weather";
+import NoticeBanner from "components/NoticeBanner";
 
 function Home() {
   return (
@@ -15,6 +16,10 @@ function Home() {
         <div className="mb-4 rounded-lg bg-white bg-opacity-90 px-6 py-3">
           <WeatherWidget />
         </div>
+      </div>
+
+      <div>
+        <NoticeBanner />
       </div>
 
       <div className="bg-white pt-8">
@@ -31,7 +36,7 @@ function Home() {
         <img
           src={heroImage2}
           alt="WGU WIS Team - Monterrey 2024"
-          className="mb-8 mt-6"
+          className="mb-8 mt-6 w-full"
         />
       </div>
 
@@ -54,7 +59,11 @@ function Home() {
             Mexico.
           </p>
         </div>
-        <img src={heroImage3} alt="Guadalajara, Jalisco" className="mt-6" />
+        <img
+          src={heroImage3}
+          alt="Guadalajara, Jalisco"
+          className="mt-6 w-full"
+        />
       </div>
 
       <div className="bg-secondary-700">

@@ -45,7 +45,7 @@ const radialGradientPlugin = plugin(
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx,json}"],
   theme: {
     extend: {
       colors: {
@@ -54,8 +54,16 @@ module.exports = {
           500: "#022A4D",
         },
         secondary: {
+          50: "#E9F2F7",
           500: "#217AAE",
           700: "#144968",
+        },
+        tertiary: {
+          150: "#BBE2E3",
+          500: "#1B9DA0",
+        },
+        warning: {
+          150: "#FFE3BB",
         },
       },
     },
