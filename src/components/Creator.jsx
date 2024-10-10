@@ -1,8 +1,8 @@
 import React from "react";
 
-const Creator = ({ name, image, title }) => {
+const Creator = ({ name, image, title, action }) => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4" onClick={action}>
       <img
         className="rounded-full"
         src={image}

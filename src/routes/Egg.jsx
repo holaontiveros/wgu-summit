@@ -5,6 +5,19 @@ import rodImage from "assets/creators/rod.png";
 import romiImage from "assets/creators/romi.png";
 
 const Egg = () => {
+  const [clickCount, setClickCount] = useState(0);
+  const [showDebuggerButtons, setShowDebuggerButtons] = useState(false);
+
+  useEffect(() => {
+    if (clickCount >= 3) {
+      setShowDebuggerButtons(true);
+    }
+  }, [clickCount]);
+
+  const handleClick = () => {
+    setClickCount(clickCount + 1);
+  };
+
   const handleSkipWaiting = () => {
     console.log("Skip waiting");
 
@@ -39,7 +52,7 @@ const Egg = () => {
           This project was brought to you by:
         </h1>
         {creators.map((creator, index) => (
-          <Creator key={index} {...creator} />
+          <Creator key={index} {...creator} action={handleClick} />
         ))}
 
         <h2 className="text-xl font-semibold">Special thanks to:</h2>
@@ -49,9 +62,16 @@ const Egg = () => {
           Victoria, Juan Soto and Ulises Vargas.
         </p>
 
-        <button className="btn btn-secondary mt-6" onClick={handleSkipWaiting}>
-          Skip waiting
-        </button>
+        {showDebuggerButtons && (
+          <div>
+            <button
+              className="btn btn-secondary mt-6"
+              onClick={handleSkipWaiting}
+            >
+              Skip waiting
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
