@@ -12,7 +12,7 @@ const Header = ({ title }) => {
     if (clickCount >= 3) {
       navigate("/egg");
     }
-  }, [clickCount]);
+  }, [clickCount, navigate]);
 
   const handleClick = () => {
     setClickCount(clickCount + 1);

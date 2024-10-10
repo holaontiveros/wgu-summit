@@ -14,6 +14,7 @@ const Place = ({ place }) => {
           <a
             className="text-sm text-secondary-500 underline"
             target="_blank"
+            rel="noreferrer"
             href={place.link}
           >
             {place.linkTitle}

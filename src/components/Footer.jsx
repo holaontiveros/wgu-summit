@@ -39,7 +39,7 @@ const menuItems = [
 
 function Footer() {
   return (
-    <footer className="sticky bottom-0 z-20 w-full border-t border-gray-200 bg-white">
+    <footer className="pb-safe sticky bottom-0 z-20 w-full border-t border-gray-200 bg-white">
       <div className="container mx-auto px-8 py-2">
         <ul className="flex justify-between">
           {menuItems.map((item, index) => (

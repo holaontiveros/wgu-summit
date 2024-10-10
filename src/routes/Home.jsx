@@ -1,4 +1,3 @@
-import Footer from "components/Footer";
 import React from "react";
 import wguLogo from "assets/images/wgu-logo.svg";
 import heroImage2 from "assets/images/hero-home-2.jpg";
@@ -69,6 +68,7 @@ function Home() {
             <a
               href="https://open.spotify.com/playlist/4WLApWE34EOB4nmGJcnydm?si=5a8dbc4e414f47eb"
               target="_blank"
+              rel="noreferrer"
               className="btn btn-link"
             >
               Listen now

@@ -13,7 +13,7 @@ const WeatherWidget = () => {
       .then((data) => setWeather(data));
 
     setIsLoading(false);
-  }, []);
+  }, [WeatherKeyEnv]);
 
   const getParsedDate = (date) => {
     const parsedDate = new Date(date);
@@ -67,11 +67,11 @@ const WeatherWidget = () => {
             />
           </div>
           <div>
-            {index == 0 && <span className="font-bold">C </span>}
+            {index === 0 && <span className="font-bold">C </span>}
             {Math.floor(day.day.mintemp_c)}° - {Math.round(day.day.maxtemp_c)}°
           </div>
           <div>
-            {index == 0 && <span className="font-bold">F </span>}
+            {index === 0 && <span className="font-bold">F </span>}
             {Math.floor(day.day.mintemp_f)}° - {Math.round(day.day.maxtemp_f)}°
           </div>
         </div>
