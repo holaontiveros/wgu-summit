@@ -19,7 +19,7 @@ function DayPicker() {
         <button
           key={i}
           className={clsx(
-            "rounded-lg border-2 bg-white pb-3 pt-3 text-center text-lg",
+            "rounded-lg border-2 bg-white pb-3 pt-3 text-center text-sm",
             currentDay === i
               ? "border-primary-500 text-primary-500"
               : "border-grayscale-100 text-grayscale-500",

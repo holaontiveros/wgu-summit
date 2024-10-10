@@ -11,15 +11,16 @@ function Agenda() {
 
   return (
     <div className="min-h-screen">
-      <Header title="Summit Agenda" />
-
       <AgendaContext.Provider
         value={{
           currentDay,
           setCurrentDay,
         }}
       >
-        <DayPicker></DayPicker>
+        <div className="sticky top-0 bg-primary-250">
+          <Header title="Summit Agenda" />
+          <DayPicker></DayPicker>
+        </div>
         <CalendarList></CalendarList>
       </AgendaContext.Provider>
     </div>

@@ -19,7 +19,7 @@ const Header = ({ title }) => {
   };
 
   return (
-    <header className="sticky top-0 z-20 mb-6" onClick={handleClick}>
+    <header className="sticky top-0 z-20" onClick={handleClick}>
       <div className="container z-20 mx-auto flex items-center gap-4 bg-primary-250 px-6 pb-6 pt-10">
         <img src={darkLogo} width="85" height="20" alt="" />
         <span className="text-xl font-bold">|</span>

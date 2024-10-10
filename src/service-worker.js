@@ -12,13 +12,14 @@ import { ExpirationPlugin } from "workbox-expiration";
 import { precacheAndRoute, createHandlerBoundToURL } from "workbox-precaching";
 import { registerRoute } from "workbox-routing";
 import { StaleWhileRevalidate } from "workbox-strategies";
+// import * as localForage from "localforage";
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-import { getMessaging } from "firebase/messaging";
-import { onBackgroundMessage } from "firebase/messaging/sw";
+// import { initializeApp } from "firebase/app";
+// // // TODO: Add SDKs for Firebase products that you want to use
+// // // https://firebase.google.com/docs/web/setup#available-libraries
+// import { getMessaging } from "firebase/messaging";
+// import { onBackgroundMessage } from "firebase/messaging/sw";
 
 clientsClaim();
 
@@ -132,7 +133,17 @@ async function handleRequest(event) {
   return response;
 }
 
-// // Your web app's Firebase configuration
+// Your web app's Firebase configuration
+/* global firebase */
+/* global importScripts */
+
+// importScripts(
+//   "https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js",
+// );
+// importScripts(
+//   "https://www.gstatic.com/firebasejs/9.22.1/firebase-messaging-compat.js",
+// );
+
 // const firebaseConfig = {
 //   apiKey: "AIzaSyDfdNUWbr3d5XBVIHJ47QGDS1GI_w5E5JQ",
 //   authDomain: "wgu-summit.firebaseapp.com",
@@ -143,20 +154,17 @@ async function handleRequest(event) {
 // };
 
 // // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
-// const messaging = getMessaging(app);
+// const messaging = firebase.messaging();
 
-// onBackgroundMessage(messaging, (payload) => {
-//   console.log(
-//     "[firebase-messaging-sw.js] Received background message ",
-//     payload,
-//   );
-//   // Customize notification here
-//   const notificationTitle = "Background Message Title";
+// messaging.onBackgroundMessage(function (payload) {
+//   console.log("[Service Worker] Received background message ", payload);
+//   const notificationTitle = payload.notification.title;
 //   const notificationOptions = {
-//     body: "Background Message body.",
-//     icon: "/firebase-logo.png",
+//     body: payload.notification.body,
+//     icon: payload.notification.icon || "/favicon.svg",
+//     // Add other options if needed
 //   };
 
 //   self.registration.showNotification(notificationTitle, notificationOptions);
