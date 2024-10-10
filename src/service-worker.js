@@ -12,6 +12,7 @@ import { ExpirationPlugin } from "workbox-expiration";
 import { precacheAndRoute, createHandlerBoundToURL } from "workbox-precaching";
 import { registerRoute } from "workbox-routing";
 import { StaleWhileRevalidate } from "workbox-strategies";
+// import * as localForage from "localforage";
 
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -136,35 +137,35 @@ async function handleRequest(event) {
 /* global firebase */
 /* global importScripts */
 
-importScripts(
-  "https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js",
-);
-importScripts(
-  "https://www.gstatic.com/firebasejs/9.22.1/firebase-messaging-compat.js",
-);
+// importScripts(
+//   "https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js",
+// );
+// importScripts(
+//   "https://www.gstatic.com/firebasejs/9.22.1/firebase-messaging-compat.js",
+// );
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDfdNUWbr3d5XBVIHJ47QGDS1GI_w5E5JQ",
-  authDomain: "wgu-summit.firebaseapp.com",
-  projectId: "wgu-summit",
-  storageBucket: "wgu-summit.appspot.com",
-  messagingSenderId: "443766700141",
-  appId: "1:443766700141:web:bd2a2552af6e3485e52764",
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDfdNUWbr3d5XBVIHJ47QGDS1GI_w5E5JQ",
+//   authDomain: "wgu-summit.firebaseapp.com",
+//   projectId: "wgu-summit",
+//   storageBucket: "wgu-summit.appspot.com",
+//   messagingSenderId: "443766700141",
+//   appId: "1:443766700141:web:bd2a2552af6e3485e52764",
+// };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
 
-const messaging = firebase.messaging();
+// const messaging = firebase.messaging();
 
-messaging.onBackgroundMessage(function (payload) {
-  console.log("[Service Worker] Received background message ", payload);
-  const notificationTitle = payload.notification.title;
-  const notificationOptions = {
-    body: payload.notification.body,
-    icon: payload.notification.icon || "/favicon.svg",
-    // Add other options if needed
-  };
+// messaging.onBackgroundMessage(function (payload) {
+//   console.log("[Service Worker] Received background message ", payload);
+//   const notificationTitle = payload.notification.title;
+//   const notificationOptions = {
+//     body: payload.notification.body,
+//     icon: payload.notification.icon || "/favicon.svg",
+//     // Add other options if needed
+//   };
 
-  self.registration.showNotification(notificationTitle, notificationOptions);
-});
+//   self.registration.showNotification(notificationTitle, notificationOptions);
+// });

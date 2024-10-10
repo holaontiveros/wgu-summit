@@ -1,22 +1,10 @@
 import React, { useEffect, useState } from "react";
+import Creator from "components/Creator";
+import javoImage from "assets/creators/javo.png";
+import rodImage from "assets/creators/rod.png";
+import romiImage from "assets/creators/romi.png";
 
 const Egg = () => {
-  const [permisionResult, setPermisionResult] = useState(null);
-
-  const askForNotificationPermission = async () => {
-    console.log("Asking for notification permission");
-
-    Notification.requestPermission().then((result) => {
-      if (result === "granted") {
-        setPermisionResult("Permission granted");
-      } else if (result === "denied") {
-        setPermisionResult("Permission denied");
-      } else {
-        setPermisionResult("Permission dismissed");
-      }
-    });
-  };
-
   const handleSkipWaiting = () => {
     console.log("Skip waiting");
 
@@ -26,22 +14,45 @@ const Egg = () => {
     });
   };
 
+  const creators = [
+    {
+      name: "Javier Ontiveros",
+      title: "Developer",
+      image: javoImage,
+    },
+    {
+      name: "Rodrigo Méndez",
+      title: "Developer",
+      image: rodImage,
+    },
+    {
+      name: "Romina Quezada",
+      title: "The most awesome designer",
+      image: romiImage,
+    },
+  ];
+
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center bg-gray-500">
-      <h1 className="mb-28 text-8xl">🐔🥚</h1>
-      Current permission result: {permisionResult && <p>{permisionResult}</p>}
-      <button
-        className="btn btn-secondary"
-        onClick={askForNotificationPermission}
-      >
-        Skip waiting
-      </button>
-      <button
-        className="btn btn-secondary"
-        onClick={askForNotificationPermission}
-      >
-        Ask for notificationsn permission
-      </button>
+    <div className="min-h-screen bg-gradient-to-b from-[#1c445d] to-[#1e6467] text-white">
+      <div className="container mx-auto flex flex-col gap-8 px-6 py-10">
+        <h1 className="mb-2 text-3xl font-semibold leading-normal tracking-wider">
+          This project was brought to you by:
+        </h1>
+        {creators.map((creator, index) => (
+          <Creator key={index} {...creator} />
+        ))}
+
+        <h2 className="text-xl font-semibold">Special thanks to:</h2>
+        <p>
+          Celerino Herrera for Playlist and Content and our QA Testers Adriana
+          Quijada, Gabriel Romero, Gisela Morales, Johann Jiménez, José Hugo
+          Victoria, Juan Soto and Ulises Vargas.
+        </p>
+
+        <button className="btn btn-secondary mt-6" onClick={handleSkipWaiting}>
+          Skip waiting
+        </button>
+      </div>
     </div>
   );
 };
