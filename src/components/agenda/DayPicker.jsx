@@ -14,11 +14,11 @@ function DayPicker() {
   ];
 
   return (
-    <div className="grid grid-cols-4 gap-6 pb-2 pl-6 pr-6 pt-2 text-gray-500">
+    <div className="grid grid-cols-4 gap-4 pb-2 pl-6 pr-6 pt-2 text-gray-500">
       {days.map((day, i) => (
         <button
           className={clsx(
-            "rounded-lg border-2 bg-white pb-3 pt-3 text-center",
+            "rounded-lg border-2 bg-white pb-3 pt-3 text-center text-lg",
             currentDay === i && "border-blue-900 text-blue-900",
           )}
           onClick={() => setCurrentDay(i)}
