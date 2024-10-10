@@ -39,7 +39,7 @@ const Explore = () => {
   });
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Header title="Explore Guadalajara" />
 
       <div className="">

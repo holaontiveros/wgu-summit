@@ -12,13 +12,9 @@ const NoticeBanner = () => {
     const currentNotice = noticeJson.data.find((notice) => {
       const noticeDate = new Date(notice.date);
       // if notice date is today
-      console.log(noticeDate.toDateString());
-      console.log(today.toDateString());
 
       return noticeDate.toDateString() === today.toDateString();
     });
-
-    console.log(currentNotice);
 
     setCurrentNotice(currentNotice);
   }, []);

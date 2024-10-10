@@ -21,6 +21,10 @@
     @apply rounded-md px-4 py-2 font-semibold uppercase text-white;
   }
 
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-700;
+  }
+
   .btn-link {
     @apply px-0 tracking-widest;
   }
