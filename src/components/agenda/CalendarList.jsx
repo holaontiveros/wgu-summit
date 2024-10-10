@@ -62,7 +62,7 @@ function CalendarTags({ tags }) {
           <span
             key={i}
             className={clsx(
-              "text-primary-500 mr-3 rounded-full border px-3 py-0.5 text-sm font-light tracking-widest",
+              "mr-3 rounded-full border px-3 py-0.5 text-sm font-light tracking-widest text-primary-500",
               borderColor,
               backgroundColor,
             )}
@@ -86,10 +86,10 @@ function CalendarEvent({ event }) {
   return (
     <div className="grid grid-cols-[80px_auto] py-1.5">
       <div>
-        <p className="text-primary-500 text-sm font-semibold">
+        <p className="text-sm font-semibold text-primary-500">
           {event.allDay ? "All Day" : event.time}
         </p>
-        <small className="text-primary-400 text-sm font-normal">
+        <small className="text-sm font-normal text-primary-400">
           {event.duration || ""}
         </small>
       </div>
@@ -104,19 +104,20 @@ function CalendarEvent({ event }) {
           )}
         ></div>
         <div>
-          <h3 className="text-primary-850 text-lg font-semibold">
+          <h3 className="text-lg font-semibold text-primary-850">
             {event.title}
           </h3>
           {event.link ? (
             <a
               href={event.link}
               target="_blank"
-              className="text-secondary-500 pt-1 font-semibold underline"
+              rel="noreferrer"
+              className="pt-1 font-semibold text-secondary-500 underline"
             >
               {event.description}
             </a>
           ) : (
-            <p className="text-grayscale-450 pt-1 text-base font-normal">
+            <p className="pt-1 text-base font-normal text-grayscale-450">
               {event.description}
             </p>
           )}
@@ -132,7 +133,7 @@ function CalendarBlock({ block }) {
   return (
     <div className="border-t pb-2 pt-2 first:border-t-0">
       {block.name && (
-        <h2 className="text-grayscale-450 py-2 text-base font-normal">
+        <h2 className="py-2 text-base font-normal text-grayscale-450">
           {block.name}
         </h2>
       )}

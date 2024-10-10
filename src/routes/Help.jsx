@@ -35,7 +35,9 @@ const Help = () => {
               <p>{data.description}</p>
               <div className="mt-4 flex flex-col gap-8 border-t border-t-slate-200 pt-6">
                 {data.contacts.map((contact, index) => (
-                  <Contact index={index} contact={contact} />
+                  <div key={index}>
+                    <Contact contact={contact} />
+                  </div>
                 ))}
               </div>
             </div>

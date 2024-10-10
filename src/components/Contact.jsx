@@ -2,7 +2,7 @@ import React from "react";
 
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
-const Contact = ({ index, contact }) => {
+const Contact = ({ contact }) => {
   const methodTypeToIcon = (type) => {
     switch (type) {
       case "phone":
@@ -26,14 +26,14 @@ const Contact = ({ index, contact }) => {
   };
 
   return (
-    <div key={index} className="flex justify-between">
+    <div className="flex justify-between">
       <div>
         <h3 className="font-semibold text-black">{contact.name}</h3>
         <span className="text-sm text-gray-500">{contact.description}</span>
       </div>
       <div className="flex">
         {contact.contactMethods.map((method, index) => (
-          <div className="inline-block h-8 w-8">
+          <div key={index} className="inline-block h-8 w-8">
             <a href={method.value}>
               <i className={methodTypeToClass(method.type)}>
                 {methodTypeToIcon(method.type)}
