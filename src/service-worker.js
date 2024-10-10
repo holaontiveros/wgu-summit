@@ -158,8 +158,6 @@ const app = initializeApp(firebaseConfig);
 
 const messaging = getMessaging(app);
 
-export { messaging, getToken, onMessage };
-
 onBackgroundMessage(messaging, (payload) => {
   console.log(
     "[firebase-messaging-sw.js] Received background message ",
