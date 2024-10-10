@@ -5184,6 +5184,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
+  languageName: node
+  linkType: hard
+
 "co@npm:^4.6.0":
   version: 4.6.0
   resolution: "co@npm:4.6.0"
@@ -14156,6 +14163,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^5.17.0"
     "@testing-library/react": "npm:^13.4.0"
     "@testing-library/user-event": "npm:^13.5.0"
+    clsx: "npm:^2.1.1"
     eslint: "npm:^8.3.0"
     eslint-config-react-app: "npm:^7.0.1"
     firebase: "npm:^10.14.1"
@@ -14170,6 +14178,11 @@ __metadata:
     tailwindcss: "npm:^3.4.13"
     tailwindcss-safe-area: "npm:^0.6.0"
     web-vitals: "npm:^2.1.4"
+    workbox-core: "npm:^7.1.0"
+    workbox-expiration: "npm:^7.1.0"
+    workbox-precaching: "npm:^7.1.0"
+    workbox-routing: "npm:^7.1.0"
+    workbox-strategies: "npm:^7.1.0"
   languageName: unknown
   linkType: soft
 
@@ -14396,6 +14409,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"workbox-core@npm:7.1.0, workbox-core@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "workbox-core@npm:7.1.0"
+  checksum: 10c0/fb0b6e23a52e085da00b7a74b1f1854f06c695eb2bd4c244aa335165f59156a4febb4f116b9893b9fb7e0e8bac092d32eecceb4d00f930a93f64737cb2be9531
+  languageName: node
+  linkType: hard
+
 "workbox-expiration@npm:6.6.0":
   version: 6.6.0
   resolution: "workbox-expiration@npm:6.6.0"
@@ -14403,6 +14423,16 @@ __metadata:
     idb: "npm:^7.0.1"
     workbox-core: "npm:6.6.0"
   checksum: 10c0/29c7b11fabbcd441073b8c926608ec4e487fc3ce56558e391840d2b63275c8724ed572ba5d87d26ec69ba1a23413669ab229acc10d3d70766147c86cc8174b0e
+  languageName: node
+  linkType: hard
+
+"workbox-expiration@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "workbox-expiration@npm:7.1.0"
+  dependencies:
+    idb: "npm:^7.0.1"
+    workbox-core: "npm:7.1.0"
+  checksum: 10c0/669d76f87c1550ce9b425232c3202a26fdea4c4c9bdc1b71c1cee741a5d011423098994452e508576174d3c0b4bec0f4b35012b6d7257e300684c87fdddb7949
   languageName: node
   linkType: hard
 
@@ -14438,6 +14468,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"workbox-precaching@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "workbox-precaching@npm:7.1.0"
+  dependencies:
+    workbox-core: "npm:7.1.0"
+    workbox-routing: "npm:7.1.0"
+    workbox-strategies: "npm:7.1.0"
+  checksum: 10c0/53b2d0a658109b4d83ee2b1913f884ee1c757a12b8931a7102272bd1e228d29f9430e7d060f328f465bca2aa24bf0719d026eef4f4d21395fa1f678f8d6a3c06
+  languageName: node
+  linkType: hard
+
 "workbox-range-requests@npm:6.6.0":
   version: 6.6.0
   resolution: "workbox-range-requests@npm:6.6.0"
@@ -14470,12 +14511,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"workbox-routing@npm:7.1.0, workbox-routing@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "workbox-routing@npm:7.1.0"
+  dependencies:
+    workbox-core: "npm:7.1.0"
+  checksum: 10c0/efd630fff594bd50276770840bce274660972587e79c097a9f1a84e8347351736aac13f11c6d7655ff550b13195d370d5c3b81a075bf452f358fc144ee868ad9
+  languageName: node
+  linkType: hard
+
 "workbox-strategies@npm:6.6.0":
   version: 6.6.0
   resolution: "workbox-strategies@npm:6.6.0"
   dependencies:
     workbox-core: "npm:6.6.0"
   checksum: 10c0/ba61b00d36afd27a9f52068b91bc8dbe14530f9816a81b6be31242ba3003e3ce77ae6e350f9dc8b97badb67083ce330f86a2d7e3cb7f929a1b012eb44081ca94
+  languageName: node
+  linkType: hard
+
+"workbox-strategies@npm:7.1.0, workbox-strategies@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "workbox-strategies@npm:7.1.0"
+  dependencies:
+    workbox-core: "npm:7.1.0"
+  checksum: 10c0/b08712a69b1b13e354345cc228c29f0c759043f7ca7cf6ce9b82fe79c9d423142bfa4a118f91f1a57054047a730127fa4474d59d9306fb2ed42fe9ef568be01a
   languageName: node
   linkType: hard
 

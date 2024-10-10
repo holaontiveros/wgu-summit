@@ -21,6 +21,8 @@ const Explore = () => {
     const updateSlidesPerView = () => {
       if (window.innerWidth < 330) {
         setSlidesPerView(1.2);
+      } else if (window.innerWidth < 365) {
+        setSlidesPerView(1.4);
       } else if (window.innerWidth < 380) {
         setSlidesPerView(1.5);
       } else if (window.innerWidth < 480) {
