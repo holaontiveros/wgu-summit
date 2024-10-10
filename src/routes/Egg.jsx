@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Egg = () => {
+  const [permisionResult, setPermisionResult] = useState(null);
+
+  const askForNotificationPermission = async () => {
+    console.log("Asking for notification permission");
+
+    Notification.requestPermission().then((result) => {
+      if (result === "granted") {
+        setPermisionResult("Permission granted");
+      } else if (result === "denied") {
+        setPermisionResult("Permission denied");
+      } else {
+        setPermisionResult("Permission dismissed");
+      }
+    });
+  };
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center bg-primary-500">
-      <h1 className="text-8xl">🐔🥚</h1>
+    <div className="flex min-h-screen w-full flex-col items-center justify-center bg-gray-500">
+      <h1 className="mb-28 text-8xl">🐔🥚</h1>
+      Current permission result: {permisionResult && <p>{permisionResult}</p>}
+      <button
+        className="btn btn-secondary"
+        onClick={askForNotificationPermission}
+      >
+        Ask for notificationsn permission
+      </button>
     </div>
   );
 };
