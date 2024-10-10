@@ -233,7 +233,7 @@
               "duration": "3 h",
               "title": "Dinner",
               "description": "El Abajeño - View Location",
-              "link": "https://example.com",
+              "link": "https://maps.app.goo.gl/5duBs5VXs9V4jEtB9",
               "color": "green",
               "tags": ["MEAL"]
             },
@@ -393,6 +393,7 @@
               "duration": "2 h",
               "title": "Dinner",
               "description": "La Tequila - View Location",
+              "link": "https://maps.app.goo.gl/HKCEgh8Q6EhRgtbbA",
               "color": "green",
               "tags": ["MEAL"]
             },

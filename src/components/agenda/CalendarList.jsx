@@ -46,7 +46,7 @@ function CalendarTags({ tags }) {
 
   return tags.length ? (
     <div className="flex flex-row pt-4">
-      {tags.map((tag) => {
+      {tags.map((tag, i) => {
         let borderColor = "border-gray-300";
         let backgroundColor = "bg-gray-100";
         const tagDef = tagDefs.find((td) => td.name === tag);
@@ -60,6 +60,7 @@ function CalendarTags({ tags }) {
         }
         return (
           <span
+            key={i}
             className={clsx(
               "text-primary-500 mr-3 rounded-full border px-3 py-0.5 text-sm font-light tracking-widest",
               borderColor,
@@ -106,9 +107,20 @@ function CalendarEvent({ event }) {
           <h3 className="text-primary-850 text-lg font-semibold">
             {event.title}
           </h3>
-          <p className="text-grayscale-450 pt-1 text-base font-normal">
-            {event.description}
-          </p>
+          {event.link ? (
+            <a
+              href={event.link}
+              target="_blank"
+              className="text-secondary-500 pt-1 font-semibold underline"
+            >
+              {event.description}
+            </a>
+          ) : (
+            <p className="text-grayscale-450 pt-1 text-base font-normal">
+              {event.description}
+            </p>
+          )}
+
           <CalendarTags tags={event.tags}></CalendarTags>
         </div>
       </div>
@@ -124,8 +136,8 @@ function CalendarBlock({ block }) {
           {block.name}
         </h2>
       )}
-      {block.events.map((event) => (
-        <CalendarEvent event={event}></CalendarEvent>
+      {block.events.map((event, i) => (
+        <CalendarEvent key={i} event={event}></CalendarEvent>
       ))}
     </div>
   );
@@ -154,8 +166,8 @@ function CalendarList() {
 
   return (
     <div className="p-6">
-      {dayBlocks.map((block) => (
-        <CalendarBlock block={block}></CalendarBlock>
+      {dayBlocks.map((block, i) => (
+        <CalendarBlock key={i} block={block}></CalendarBlock>
       ))}
     </div>
   );
