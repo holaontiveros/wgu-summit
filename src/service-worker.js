@@ -14,11 +14,11 @@ import { registerRoute } from "workbox-routing";
 import { StaleWhileRevalidate } from "workbox-strategies";
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-import { getMessaging } from "firebase/messaging";
-import { onBackgroundMessage } from "firebase/messaging/sw";
+// import { initializeApp } from "firebase/app";
+// // // TODO: Add SDKs for Firebase products that you want to use
+// // // https://firebase.google.com/docs/web/setup#available-libraries
+// import { getMessaging } from "firebase/messaging";
+// import { onBackgroundMessage } from "firebase/messaging/sw";
 
 clientsClaim();
 
@@ -133,6 +133,14 @@ async function handleRequest(event) {
 }
 
 // Your web app's Firebase configuration
+
+importScripts(
+  "https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js",
+);
+importScripts(
+  "https://www.gstatic.com/firebasejs/9.22.1/firebase-messaging-compat.js",
+);
+
 const firebaseConfig = {
   apiKey: "AIzaSyDfdNUWbr3d5XBVIHJ47QGDS1GI_w5E5JQ",
   authDomain: "wgu-summit.firebaseapp.com",
@@ -143,17 +151,17 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 
-const messaging = getMessaging(app);
+const messaging = firebase.messaging();
 
-onBackgroundMessage(messaging, (payload) => {
-  console.log("[sw.js] Received background message ", payload);
-  // Customize notification here
-  const notificationTitle = "Background Message Title";
+messaging.onBackgroundMessage(function (payload) {
+  console.log("[Service Worker] Received background message ", payload);
+  const notificationTitle = payload.notification.title;
   const notificationOptions = {
-    body: "Background Message body.",
-    icon: "/firebase-logo.png",
+    body: payload.notification.body,
+    icon: payload.notification.icon || "/favicon.svg",
+    // Add other options if needed
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
