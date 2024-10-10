@@ -14,11 +14,11 @@ import { registerRoute } from "workbox-routing";
 import { StaleWhileRevalidate } from "workbox-strategies";
 
 // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 // // TODO: Add SDKs for Firebase products that you want to use
 // // https://firebase.google.com/docs/web/setup#available-libraries
-// import { getMessaging } from "firebase/messaging";
-// import { onBackgroundMessage } from "firebase/messaging/sw";
+import { getMessaging } from "firebase/messaging";
+import { onBackgroundMessage } from "firebase/messaging/sw";
 
 clientsClaim();
 
@@ -132,32 +132,32 @@ async function handleRequest(event) {
   return response;
 }
 
-// // Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDfdNUWbr3d5XBVIHJ47QGDS1GI_w5E5JQ",
-//   authDomain: "wgu-summit.firebaseapp.com",
-//   projectId: "wgu-summit",
-//   storageBucket: "wgu-summit.appspot.com",
-//   messagingSenderId: "443766700141",
-//   appId: "1:443766700141:web:bd2a2552af6e3485e52764",
-// };
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDfdNUWbr3d5XBVIHJ47QGDS1GI_w5E5JQ",
+  authDomain: "wgu-summit.firebaseapp.com",
+  projectId: "wgu-summit",
+  storageBucket: "wgu-summit.appspot.com",
+  messagingSenderId: "443766700141",
+  appId: "1:443766700141:web:bd2a2552af6e3485e52764",
+};
 
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-// const messaging = getMessaging(app);
+const messaging = getMessaging(app);
 
-// onBackgroundMessage(messaging, (payload) => {
-//   console.log(
-//     "[firebase-messaging-sw.js] Received background message ",
-//     payload,
-//   );
-//   // Customize notification here
-//   const notificationTitle = "Background Message Title";
-//   const notificationOptions = {
-//     body: "Background Message body.",
-//     icon: "/firebase-logo.png",
-//   };
+onBackgroundMessage(messaging, (payload) => {
+  console.log(
+    "[firebase-messaging-sw.js] Received background message ",
+    payload,
+  );
+  // Customize notification here
+  const notificationTitle = "Background Message Title";
+  const notificationOptions = {
+    body: "Background Message body.",
+    icon: "/firebase-logo.png",
+  };
 
-//   self.registration.showNotification(notificationTitle, notificationOptions);
-// });
+  self.registration.showNotification(notificationTitle, notificationOptions);
+});
