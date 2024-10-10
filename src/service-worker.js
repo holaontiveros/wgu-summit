@@ -133,6 +133,8 @@ async function handleRequest(event) {
 }
 
 // Your web app's Firebase configuration
+/* global firebase */
+/* global importScripts */
 
 importScripts(
   "https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js",
@@ -151,7 +153,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 const messaging = firebase.messaging();
 
