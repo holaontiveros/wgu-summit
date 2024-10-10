@@ -5,17 +5,24 @@ import { AgendaContext } from "routes/Agenda";
 
 import scheduleJson from "assets/data/schedule.json";
 
-const colorMapper = {
-  gray: "bg-gray-300",
-  green: "bg-teal-600",
-  yellow: "bg-yellow-400",
-  blue: "bg-sky-600",
+const bgColorMapper = {
+  gray: "bg-grayscale-100",
+  green: "bg-tertiary-500",
+  yellow: "bg-butter-500",
+  blue: "bg-secondary-500",
 };
 
-const lightColorMapper = {
-  gray: "bg-gray-100",
-  green: "bg-teal-100",
-  yellow: "bg-yellow-100",
+const borderColorMapper = {
+  gray: "border-grayscale-500",
+  green: "border-tertiary-500",
+  yellow: "border-butter-500",
+  blue: "border-secondary-500",
+};
+
+const lightBgColorMapper = {
+  gray: "bg-grayscale-50",
+  green: "bg-tertiary-50",
+  yellow: "bg-butter-50",
   blue: "bg-sky-100",
 };
 
@@ -45,8 +52,8 @@ function CalendarTags({ tags }) {
         const tagDef = tagDefs.find((td) => td.name === tag);
         if (tagDef) {
           try {
-            borderColor = colorMapper[tagDef.color];
-            backgroundColor = lightColorMapper[tagDef.color];
+            borderColor = borderColorMapper[tagDef.color];
+            backgroundColor = lightBgColorMapper[tagDef.color];
           } catch (err) {
             console.error("Unknown color in data", err);
           }
@@ -54,7 +61,7 @@ function CalendarTags({ tags }) {
         return (
           <span
             className={clsx(
-              "rounded-full border px-3 py-0.5 text-sm font-light tracking-widest",
+              "text-primary-500 mr-3 rounded-full border px-3 py-0.5 text-sm font-light tracking-widest",
               borderColor,
               backgroundColor,
             )}
@@ -70,7 +77,7 @@ function CalendarTags({ tags }) {
 function CalendarEvent({ event }) {
   let color = "bg-red-600";
   try {
-    color = event.allDay ? "bg-white" : colorMapper[event.color];
+    color = event.allDay ? "bg-white" : bgColorMapper[event.color];
   } catch (err) {
     console.error("Unknown color in data", err);
   }
@@ -78,10 +85,10 @@ function CalendarEvent({ event }) {
   return (
     <div className="grid grid-cols-[80px_auto] py-1.5">
       <div>
-        <p className="text-sm font-semibold">
+        <p className="text-primary-500 text-sm font-semibold">
           {event.allDay ? "All Day" : event.time}
         </p>
-        <small className="text-sm font-normal text-gray-500">
+        <small className="text-primary-400 text-sm font-normal">
           {event.duration || ""}
         </small>
       </div>
@@ -96,8 +103,10 @@ function CalendarEvent({ event }) {
           )}
         ></div>
         <div>
-          <h3 className="text-lg font-semibold">{event.title}</h3>
-          <p className="pt-1 text-base font-normal text-gray-500">
+          <h3 className="text-primary-850 text-lg font-semibold">
+            {event.title}
+          </h3>
+          <p className="text-grayscale-450 pt-1 text-base font-normal">
             {event.description}
           </p>
           <CalendarTags tags={event.tags}></CalendarTags>
@@ -110,7 +119,11 @@ function CalendarEvent({ event }) {
 function CalendarBlock({ block }) {
   return (
     <div className="border-t pb-2 pt-2 first:border-t-0">
-      <h2 className="text-gray-500">{block.name}</h2>
+      {block.name && (
+        <h2 className="text-grayscale-450 py-2 text-base font-normal">
+          {block.name}
+        </h2>
+      )}
       {block.events.map((event) => (
         <CalendarEvent event={event}></CalendarEvent>
       ))}

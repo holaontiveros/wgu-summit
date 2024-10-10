@@ -10,7 +10,7 @@ function Agenda() {
   const [currentDay, setCurrentDay] = useState(0);
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Header title="Summit Agenda" />
 
       <AgendaContext.Provider
