@@ -51,7 +51,9 @@ registerRoute(
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
   ({ url }) =>
-    url.origin === self.location.origin && url.pathname.endsWith(".png"), // Customize this strategy as needed, e.g., by changing to CacheFirst.
+    (url.origin === self.location.origin ||
+      url.origin === "cdn.weatherapi.com") &&
+    url.pathname.endsWith(".png"), // Customize this strategy as needed, e.g., by changing to CacheFirst.
   new StaleWhileRevalidate({
     cacheName: "images",
     plugins: [
@@ -71,3 +73,54 @@ self.addEventListener("message", (event) => {
 });
 
 // Any other custom service worker logic can go here.
+
+// Caching for google fonts
+const CURRENT_CACHES = {
+  font: "google-font-cache-v3",
+};
+
+self.addEventListener("fetch", (event) => {
+  event.respondWith(handleRequest(event));
+});
+
+async function handleRequest(event) {
+  // Break out if request does not match
+  if (
+    (event.request.cache === "only-if-cached" &&
+      event.request.mode !== "same-origin") ||
+    event.request.url.indexOf("https://fonts.googleapis.com/css") !== 0
+  ) {
+    return await fetch(event.request);
+  }
+
+  const request = new Request(
+    // Rewrite Request Object
+    event.request.url,
+    {
+      method: event.request.method,
+      body: event.request.body,
+      mode: "cors",
+      credentials: "omit",
+      cache: event.request.cache,
+      redirect: event.request.redirect,
+      referrer: event.request.referrer,
+      integrity: event.request.integrity,
+    },
+  );
+
+  const response = await fetch(request);
+  if (response.status < 400) {
+    const cache = await caches.open(CURRENT_CACHES.font);
+    const cacheResponse = await cache.match(event.request);
+    if (cacheResponse) {
+      return cacheResponse;
+    }
+    const css = await response.text();
+    // Patch CSS to Include "font-display: swap"
+    const patched = css.replace(/}/g, "  font-display: swap; \n}");
+    const newResponse = new Response(patched, { headers: response.headers });
+    cache.put(event.request, newResponse.clone());
+    return newResponse;
+  }
+  return response;
+}

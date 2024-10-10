@@ -64,5 +64,5 @@ module.exports = {
       sans: ["Open Sans", "sans-serif"],
     },
   },
-  plugins: [radialGradientPlugin],
+  plugins: [radialGradientPlugin, require("tailwindcss-safe-area")],
 };

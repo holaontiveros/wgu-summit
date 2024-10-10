@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import * as localForage from "localforage";
 
 const WeatherWidget = () => {
   const [weather, setWeather] = useState(null);
@@ -6,14 +7,30 @@ const WeatherWidget = () => {
   const WeatherKeyEnv = process.env.REACT_APP_WEATHER_API_KEY;
 
   useEffect(() => {
-    fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
-    )
-      .then((response) => response.json())
-      .then((data) => setWeather(data));
+    const fetchStoredWeather = async () => {
+      const storedWeather = await localForage.getItem("weather");
+      if (storedWeather) {
+        setWeather(storedWeather);
+      }
+    };
+
+    fetchStoredWeather();
+
+    try {
+      fetch(
+        `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setWeather(data);
+          localForage.setItem("weather", data);
+        });
+    } catch (error) {
+      console.error("Error fetching weather data", error);
+    }
 
     setIsLoading(false);
-  }, []);
+  }, [WeatherKeyEnv]);
 
   const getParsedDate = (date) => {
     const parsedDate = new Date(date);
@@ -67,11 +84,11 @@ const WeatherWidget = () => {
             />
           </div>
           <div>
-            {index == 0 && <span className="font-bold">C </span>}
+            {index === 0 && <span className="font-bold">C </span>}
             {Math.floor(day.day.mintemp_c)}° - {Math.round(day.day.maxtemp_c)}°
           </div>
           <div>
-            {index == 0 && <span className="font-bold">F </span>}
+            {index === 0 && <span className="font-bold">F </span>}
             {Math.floor(day.day.mintemp_f)}° - {Math.round(day.day.maxtemp_f)}°
           </div>
         </div>
