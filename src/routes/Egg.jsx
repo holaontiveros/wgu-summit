@@ -34,7 +34,7 @@ const Egg = () => {
         className="btn btn-secondary"
         onClick={askForNotificationPermission}
       >
-        Ask for notificationsn permission
+        Skip waiting
       </button>
       <button
         className="btn btn-secondary"
