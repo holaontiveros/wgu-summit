@@ -1,5 +1,5 @@
 import React from "react";
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import Header from "components/Header";
 import DayPicker from "components/agenda/DayPicker";
 import CalendarList from "components/agenda/CalendarList";
@@ -8,6 +8,10 @@ export const AgendaContext = createContext(null);
 
 function Agenda() {
   const [currentDay, setCurrentDay] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentDay]);
 
   return (
     <div className="min-h-screen">
