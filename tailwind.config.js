@@ -55,6 +55,7 @@ module.exports = {
         },
         secondary: {
           500: "#217AAE",
+          700: "#144968",
         },
       },
     },
@@ -63,5 +64,5 @@ module.exports = {
       sans: ["Open Sans", "sans-serif"],
     },
   },
-  plugins: [radialGradientPlugin],
+  plugins: [radialGradientPlugin, require("tailwindcss-safe-area")],
 };

@@ -14,6 +14,28 @@ const Explore = () => {
     setExploreData(exploreJson.data);
   }, []);
 
+  // get screen width and assign the slidesPerView based on it
+  const [slidesPerView, setSlidesPerView] = useState(1.2);
+
+  useEffect(() => {
+    const updateSlidesPerView = () => {
+      if (window.innerWidth < 330) {
+        setSlidesPerView(1.2);
+      } else if (window.innerWidth < 380) {
+        setSlidesPerView(1.5);
+      } else if (window.innerWidth < 480) {
+        setSlidesPerView(1.6);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    window.addEventListener("resize", updateSlidesPerView);
+    updateSlidesPerView();
+
+    return () => window.removeEventListener("resize", updateSlidesPerView);
+  });
+
   return (
     <div>
       <Header title="Explore Guadalajara" />
@@ -21,10 +43,10 @@ const Explore = () => {
       <div className="">
         {exploreData.map((item, index) => (
           <div key={index} className="flex flex-col gap-4 px-6">
-            <h2 className="text-primary-500 text-xl font-bold">{item.title}</h2>
+            <h2 className="text-xl font-bold text-primary-500">{item.title}</h2>
 
             <div>
-              <Swiper spaceBetween={16} slidesPerView={1.6}>
+              <Swiper spaceBetween={16} slidesPerView={slidesPerView}>
                 {item.places.map((place, index) => (
                   <SwiperSlide key={index}>
                     {place && <Place place={place} />}
