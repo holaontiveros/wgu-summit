@@ -17,50 +17,60 @@ function Home() {
           <WeatherWidget />
         </div>
       </div>
-      <div className="container mx-auto flex flex-col gap-2 bg-white px-6 pt-8">
-        <h3 className="headline-3 text-blue-950">Welcome to WIS Summit!</h3>
-        <p>
-          We're pleased to have you join us in Guadalajara for four days of
-          insightful presentations and collaboration with our organization's
-          leaders. This app is designed to keep you informed with the summit
-          agenda and provide helpful resources to guide your experience.
-        </p>
+
+      <div className="bg-white pt-8">
+        <div className="container mx-auto flex flex-col gap-2 px-6">
+          <h3 className="headline-3 text-blue-950">Welcome to WIS Summit!</h3>
+          <p>
+            We're pleased to have you join us in Guadalajara for four days of
+            insightful presentations and collaboration with our organization's
+            leaders. This app is designed to keep you informed with the summit
+            agenda and provide helpful resources to guide your experience.
+          </p>
+        </div>
+
+        <img
+          src={heroImage2}
+          alt="WGU WIS Team - Monterrey 2024"
+          className="mb-8 mt-6"
+        />
       </div>
 
-      <img
-        src={heroImage2}
-        alt="WGU WIS Team - Monterrey 2024"
-        className="my-6"
-      />
-
-      <div className="container mx-auto flex flex-col gap-2 px-6">
-        <h3 className="headline-3 text-blue-950">
-          Guadalajara, La Perla Tapatía
-        </h3>
-        <p>
-          Guadalajara is also known as the ZMG, which stands for “Zona
-          Metropolitana de Guadalajara” (Guadalajara Metropolitan Area in
-          Spanish). The ZMG is the most populous metropolitan area in the state
-          of Jalisco and the third largest in Mexico, after Greater Mexico City
-          and Monterrey. Guadalajara is often referred to as the "Silicon Valley
-          of Mexico" due to its thriving tech industry and innovation hubs. It's
-          also renowned for hosting the prestigious Guadalajara International
-          Book Fair, the largest of its kind in the Spanish-speaking world. The
-          city is as well famous for its vibrant film and arts festivals, making
-          it a key cultural destination in Mexico.
-        </p>
-      </div>
-
-      <div className="bg-blue-950">
+      <div className="bg-white pt-8">
+        <div className="container mx-auto flex flex-col gap-2 px-6">
+          <h3 className="headline-3 text-blue-950">
+            Guadalajara, La Perla Tapatía
+          </h3>
+          <p>
+            Guadalajara is also known as the ZMG, which stands for “Zona
+            Metropolitana de Guadalajara” (Guadalajara Metropolitan Area in
+            Spanish). The ZMG is the most populous metropolitan area in the
+            state of Jalisco and the third largest in Mexico, after Greater
+            Mexico City and Monterrey. Guadalajara is often referred to as the
+            "Silicon Valley of Mexico" due to its thriving tech industry and
+            innovation hubs. It's also renowned for hosting the prestigious
+            Guadalajara International Book Fair, the largest of its kind in the
+            Spanish-speaking world. The city is as well famous for its vibrant
+            film and arts festivals, making it a key cultural destination in
+            Mexico.
+          </p>
+        </div>
         <img src={heroImage3} alt="Guadalajara, Jalisco" className="mt-6" />
+      </div>
+
+      <div className="bg-secondary-700">
         <div className="container">
-          <div className="flex flex-col gap-2 px-6 py-6 text-white">
+          <div className="flex flex-col gap-2 px-6 py-4 text-white">
             <h3 className="headline-3">Guadalajara's Rhythm</h3>
             <p>
               Experience the rhythm of Guadalajara with this handpicked playlist
               of local bands.
             </p>
-            <a href="#" target="_blank" className="btn btn-link">
+            <a
+              href="https://open.spotify.com/playlist/4WLApWE34EOB4nmGJcnydm?si=5a8dbc4e414f47eb"
+              target="_blank"
+              className="btn btn-link"
+            >
               Listen now
             </a>
           </div>
