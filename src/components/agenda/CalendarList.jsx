@@ -1,7 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import { useContext, useState, useEffect } from "react";
-import { AgendaContext } from "routes/Agenda";
+import { AgendaContext } from "src/routes/Agenda";
 
 import scheduleJson from "assets/data/schedule.json";
 

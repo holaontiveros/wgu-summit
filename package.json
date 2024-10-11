@@ -8,14 +8,20 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
     "clsx": "^2.1.1",
     "localforage": "^1.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.27.0",
     "react-toastify": "^10.0.5",
     "swiper": "^11.1.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
     "web-vitals": "^2.1.4",
     "workbox-core": "^7.1.0",
     "workbox-expiration": "^7.1.0",
@@ -24,16 +30,9 @@
     "workbox-strategies": "^7.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
@@ -48,12 +47,11 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.3.0",
-    "eslint-config-react-app": "^7.0.1",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.13",
-    "tailwindcss-safe-area": "^0.6.0"
+    "tailwindcss-safe-area": "^0.6.0",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "volta": {
     "node": "20.18.0",

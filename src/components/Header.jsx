@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import darkLogo from "assets/images/wgu-logo-dark.svg";
+import darkLogo from "src/assets/images/wgu-logo-dark.svg";
 
 const Header = ({ title }) => {
   const navigate = useNavigate();

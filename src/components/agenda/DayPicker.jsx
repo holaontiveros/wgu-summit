@@ -1,7 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import { useContext } from "react";
-import { AgendaContext } from "routes/Agenda";
+import { AgendaContext } from "src/routes/Agenda";
 
 function DayPicker() {
   const { currentDay, setCurrentDay } = useContext(AgendaContext);

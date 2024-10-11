@@ -1,5 +1,5 @@
 import React from "react";
-import useImage from "utils/hooks/useImage";
+import useImage from "src/utils/hooks/useImage";
 
 const Place = ({ place }) => {
   const { image } = useImage(place.hero);

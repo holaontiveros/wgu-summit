@@ -1,7 +1,7 @@
 import * as localForage from "localforage";
 import React, { useContext, useEffect, useState } from "react";
 
-const WeatherKeyEnv = process.env.REACT_APP_WEATHER_API_KEY;
+const WeatherKeyEnv = import.meta.env.VITE_APP_WEATHER_API_KEY;
 
 window.localForage = localForage;
 
