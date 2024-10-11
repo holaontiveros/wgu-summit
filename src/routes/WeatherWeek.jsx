@@ -30,7 +30,7 @@ const WeatherWeek = () => {
                 {weather?.location.name}, {weather?.location.country}
               </div>
               <div className="flex text-2xl font-bold">
-                {currentDay?.temp_c}°C - {currentDay?.temp_f}°F .
+                {currentDay?.temp_c}°C - {currentDay?.temp_f}°F
               </div>
             </div>
             <div className="block rounded-full border-2 border-white from-slate-50 to-slate-200 p-2 bg-radient-circle-c">
