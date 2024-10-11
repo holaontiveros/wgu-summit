@@ -1,41 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import * as localForage from "localforage";
+import { WeatherContext } from "App";
+import { useNavigate } from "react-router-dom";
+import useWeather from "utils/hooks/useWeather";
+
+export const getParsedWeatherDate = (date) => {
+  const parsedDate = new Date(date.replace(/-/g, "/"));
+  // return formated date as "Mon 01" Weekday and day of the month
+  // console.log(parsedDate.toDateString());
+  return `${parsedDate.toDateString().slice(0, 3)} ${parsedDate.getDate()}`;
+};
 
 const WeatherWidget = () => {
-  const [weather, setWeather] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const WeatherKeyEnv = process.env.REACT_APP_WEATHER_API_KEY;
+  const { weather, isLoading } = useWeather(WeatherContext);
+  const [weather4days, setWeather4days] = useState(null);
 
   useEffect(() => {
-    const fetchStoredWeather = async () => {
-      const storedWeather = await localForage.getItem("weather");
-      if (storedWeather) {
-        setWeather(storedWeather);
-      }
-    };
+    if (weather) {
+      setWeather4days(weather.forecast.forecastday.slice(0, 4));
+    }
+  }, [weather]);
 
-    fetchStoredWeather();
-
-    fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=4&aqi=no&alerts=no`,
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setWeather(data);
-        localForage.setItem("weather", data);
-      })
-      .catch((error) => {
-        console.log("Error while fetching weather data");
-      });
-
-    setIsLoading(false);
-  }, [WeatherKeyEnv]);
-
-  const getParsedDate = (date) => {
-    const parsedDate = new Date(date.replace(/-/g, "/"));
-    // return formated date as "Mon 01" Weekday and day of the month
-    // console.log(parsedDate.toDateString());
-    return `${parsedDate.toDateString().slice(0, 3)} ${parsedDate.getDate()}`;
+  const navigateToWeather = () => {
+    // No weather view for now
+    // navigate("/weather");
   };
 
   if (isLoading) {
@@ -65,16 +53,20 @@ const WeatherWidget = () => {
     );
   }
 
+  if (!weather4days) {
+    return null;
+  }
+
   return (
-    <div className="flex justify-between text-black">
+    <div className="flex justify-between" onClick={navigateToWeather}>
       {/* for each item in weather forcast */}
-      {weather?.forecast?.forecastday.map((day, index) => (
+      {weather4days.map((day, index) => (
         <div
           key={index}
-          className="flex flex-col items-center gap-2 text-center text-sm text-slate-500"
+          className="flex flex-col items-center gap-2 text-center text-sm"
         >
           <div className="font-semibold uppercase">
-            {getParsedDate(day.date)}
+            {getParsedWeatherDate(day.date)}
           </div>
           <div className="inline-block rounded-full border-2 border-white from-slate-50 to-slate-200 p-2 bg-radient-circle-c">
             <img

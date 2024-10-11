@@ -13,7 +13,7 @@ function Home() {
         <img src={wguLogo} alt="WGU Logo" className="w-32" />
         <h1 className="headline-1">Guadalajara Summit</h1>
         <p className="headline-2 !font-normal">{new Date().toDateString()}</p>
-        <div className="mb-4 rounded-lg bg-white bg-opacity-90 px-6 py-3">
+        <div className="mb-4 rounded-lg bg-white bg-opacity-90 px-6 py-3 text-slate-500">
           <WeatherWidget />
         </div>
       </div>

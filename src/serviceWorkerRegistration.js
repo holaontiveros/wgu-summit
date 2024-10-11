@@ -55,15 +55,24 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
+  const updateAvailableEvent = new Event("updateAvailable");
+
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
+      if (registration.waiting) {
+        console.log("A Service Worker is already waiting to activate");
+        document.dispatchEvent(updateAvailableEvent);
+      }
+
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
           return;
         }
         installingWorker.onstatechange = () => {
+          console.log("Service Worker State Change: ", installingWorker.state);
+
           if (installingWorker.state === "installed") {
             if (navigator.serviceWorker.controller) {
               // At this point, the updated precached content has been fetched,
@@ -74,6 +83,10 @@ function registerValidSW(swUrl, config) {
                   "tabs for this page are closed. See https://cra.link/PWA.",
               );
 
+              // trigger vanilla JS event for the app to listen to
+
+              document.dispatchEvent(updateAvailableEvent);
+
               // Execute callback
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
@@ -83,6 +96,8 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log("Content is cached for offline use.");
+              const contentCachedEvent = new Event("contentCached");
+              document.dispatchEvent(contentCachedEvent);
 
               // Execute callback
               if (config && config.onSuccess) {
