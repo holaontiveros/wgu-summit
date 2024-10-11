@@ -27,7 +27,7 @@ const WeatherWeek = () => {
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 font-semibold">
                 <MapPinIcon className="h-6 w-6"></MapPinIcon>{" "}
-                {weather?.location.name}, {weather?.location.country} .
+                {weather?.location.name}, {weather?.location.country}
               </div>
               <div className="flex text-2xl font-bold">
                 {currentDay?.temp_c}°C - {currentDay?.temp_f}°F
