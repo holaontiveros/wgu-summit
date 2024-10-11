@@ -22,8 +22,6 @@ const useWeather = (WeatherContext) => {
       const now = new Date();
 
       if (storedWeather && now - partsedStoredDate < 1000 * 60 * 30) {
-        console.log("Weather data is up to date");
-
         setIsLoading(false);
         return;
       }
