@@ -55,17 +55,17 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
+  const updateAvailableEvent = new Event("updateAvailable");
+
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
+      if (registration.waiting) {
+        console.log("A Service Worker is already waiting to activate");
+        document.dispatchEvent(updateAvailableEvent);
+      }
+
       registration.onupdatefound = () => {
-        const updateAvailableEvent = new Event("updateAvailable");
-
-        if (registration.waiting) {
-          console.log("A Service Worker is already waiting to activate");
-          document.dispatchEvent(updateAvailableEvent);
-        }
-
         const installingWorker = registration.installing;
         if (installingWorker == null) {
           return;
