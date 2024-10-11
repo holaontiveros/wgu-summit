@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, Explore, Help, Egg, Agenda } from "routes";
+import { Home, Explore, Help, Egg, Agenda, WeatherWeek } from "routes";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/egg",
         element: <Egg />,
+      },
+      {
+        path: "/weather",
+        element: <WeatherWeek />,
       },
     ],
   },
