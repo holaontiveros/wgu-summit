@@ -41,6 +41,7 @@ function App() {
     "updateAvailable",
     () => {
       toast(<UpdateAvailableToastMsg />, {
+        toastId: "updateAvailable",
         position: "bottom-center",
         autoClose: true,
         closeOnClick: false,
@@ -54,6 +55,7 @@ function App() {
     "contentCached",
     () => {
       toast("Content is cached for offline use 😎", {
+        toastId: "contentCached",
         position: "bottom-center",
         autoClose: true,
         closeOnClick: true,

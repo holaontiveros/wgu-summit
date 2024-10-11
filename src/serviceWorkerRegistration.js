@@ -59,6 +59,13 @@ function registerValidSW(swUrl, config) {
     .register(swUrl)
     .then((registration) => {
       registration.onupdatefound = () => {
+        const updateAvailableEvent = new Event("updateAvailable");
+
+        if (registration.waiting) {
+          console.log("A Service Worker is already waiting to activate");
+          document.dispatchEvent(updateAvailableEvent);
+        }
+
         const installingWorker = registration.installing;
         if (installingWorker == null) {
           return;
@@ -77,7 +84,7 @@ function registerValidSW(swUrl, config) {
               );
 
               // trigger vanilla JS event for the app to listen to
-              const updateAvailableEvent = new Event("updateAvailable");
+
               document.dispatchEvent(updateAvailableEvent);
 
               // Execute callback
