@@ -40,12 +40,23 @@ function App() {
   useEventListener(
     "updateAvailable",
     () => {
-      console.log("updateAvailable event received");
-
       toast(<UpdateAvailableToastMsg />, {
         position: "bottom-center",
         autoClose: true,
         closeOnClick: false,
+        draggable: false,
+      });
+    },
+    document,
+  );
+
+  useEventListener(
+    "contentCached",
+    () => {
+      toast("Content is cached for offline use 😎", {
+        position: "bottom-center",
+        autoClose: true,
+        closeOnClick: true,
         draggable: false,
       });
     },
