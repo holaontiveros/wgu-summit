@@ -32,9 +32,9 @@
             },
             {
               "time": "2:00 p.m.",
-              "duration": "3 h",
-              "title": "Boxed Dinner Pick Up",
-              "description": "RIU Plaza Hotel - Front Desk",
+              "duration": "2 h",
+              "title": "Lunch",
+              "description": "RIU Plaza Hotel - Decapolis Restaurant",
               "color": "green",
               "tags": ["MEAL"]
             },
@@ -111,18 +111,18 @@
             },
             {
               "time": "10:25 a.m.",
-              "duration": "15 m",
-              "title": "David Opening",
-              "description": "",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "10:40 a.m.",
               "duration": "5 m",
               "title": "Break",
               "description": "",
               "color": "gray",
+              "tags": []
+            },
+            {
+              "time": "10:30 a.m.",
+              "duration": "15 m",
+              "title": "David Opening",
+              "description": "",
+              "color": "blue",
               "tags": []
             },
             {
@@ -224,7 +224,7 @@
               "time": "5:30 p.m.",
               "duration": "30 m",
               "title": "Meet to board bus to Tlaquepaque",
-              "description": "RIU Plaza Hotel - Lobby",
+              "description": "RIU Plaza Hotel - Guadalajara Conference Room",
               "color": "yellow",
               "tags": ["SOCIAL"]
             },
@@ -346,7 +346,7 @@
               "time": "12:30 p.m.",
               "duration": "30 m",
               "title": "Meet to board bus to Bowling and Lunch",
-              "description": "RIU Plaza Hotel - Lobby",
+              "description": "RIU Plaza Hotel - Guadalajara Conference Room",
               "color": "yellow",
               "tags": ["SOCIAL"]
             },
@@ -384,7 +384,7 @@
               "time": "5:00 p.m.",
               "duration": "30 m",
               "title": "Meet to board bus to Dinner",
-              "description": "RIU Plaza Hotel - Lobby",
+              "description": "RIU Plaza Hotel - Guadalajara Conference Room",
               "color": "yellow",
               "tags": ["SOCIAL"]
             },

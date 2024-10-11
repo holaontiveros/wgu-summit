@@ -25,6 +25,10 @@ const Egg = () => {
     navigator.serviceWorker.ready.then((registration) => {
       registration.waiting.postMessage({ type: "SKIP_WAITING" });
     });
+
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
   };
 
   const creators = [

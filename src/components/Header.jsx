@@ -9,7 +9,7 @@ const Header = ({ title }) => {
   const [clickCount, setClickCount] = useState(0);
 
   useEffect(() => {
-    if (clickCount >= 3) {
+    if (clickCount >= 2) {
       navigate("/egg");
     }
   }, [clickCount, navigate]);
