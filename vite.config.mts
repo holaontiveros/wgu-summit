@@ -15,10 +15,53 @@ export default defineConfig({
       registerType: "autoUpdate",
       manifest: false,
       workbox: {
-        // cache normal assets and cdn.weatherapi.com images
         globPatterns: [
-          "**/*.{js,css,html,ico,png,svg,jpg,json}",
-          "cdn.weatherapi.com/**/*.{png}",
+          "**/*.{js,css,html,ico,png,svg,jpg,json,site.webmanifest}",
+        ],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "gstatic-fonts-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+
+          {
+            urlPattern: /^https:\/\/cdn\.weatherapi\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "weatherImages",
+              expiration: {
+                maxEntries: 20,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
         ],
       },
     }),
