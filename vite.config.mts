@@ -15,7 +15,11 @@ export default defineConfig({
       registerType: "autoUpdate",
       manifest: false,
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,json}"],
+        // cache normal assets and cdn.weatherapi.com images
+        globPatterns: [
+          "**/*.{js,css,html,ico,png,svg,jpg,json}",
+          "cdn.weatherapi.com/**/*.{png}",
+        ],
       },
     }),
   ],

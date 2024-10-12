@@ -10,10 +10,12 @@ import { Agenda, Egg, Explore, Help, Home, WeatherWeek } from "src/routes";
 import { registerSW } from "virtual:pwa-register";
 
 const contentCachedEvent = new Event("contentCached");
+const updateAvailableEvent = new Event("updateAvailable");
 
 registerSW({
   immediate: true,
   onOfflineReady: () => document.dispatchEvent(contentCachedEvent),
+  onNeedRefresh: () => document.dispatchEvent(updateAvailableEvent),
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
