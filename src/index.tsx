@@ -6,7 +6,15 @@ import "./index.css";
 import App from "src/App";
 import reportWebVitals from "src/reportWebVitals";
 import { Agenda, Egg, Explore, Help, Home, WeatherWeek } from "src/routes";
-import * as serviceWorkerRegistration from "src/serviceWorkerRegistration";
+// import * as serviceWorkerRegistration from "src/serviceWorkerRegistration";
+import { registerSW } from "virtual:pwa-register";
+
+const contentCachedEvent = new Event("contentCached");
+
+registerSW({
+  immediate: true,
+  onOfflineReady: () => document.dispatchEvent(contentCachedEvent),
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -49,7 +57,7 @@ root.render(
   </React.StrictMode>,
 );
 
-serviceWorkerRegistration.register();
+// serviceWorkerRegistration.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

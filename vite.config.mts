@@ -12,12 +12,10 @@ export default defineConfig({
     react(),
     viteTsconfigPaths(),
     VitePWA({
-      strategies: "injectManifest",
-      injectRegister: null,
+      registerType: "autoUpdate",
       manifest: false,
       workbox: {
-        globPatterns: ["**/*.{js,css,html}"],
-        navigateFallback: null,
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,json}"],
       },
     }),
   ],
