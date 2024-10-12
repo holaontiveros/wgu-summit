@@ -5870,6 +5870,7 @@ __metadata:
     workbox-precaching: "npm:^7.1.0"
     workbox-routing: "npm:^7.1.0"
     workbox-strategies: "npm:^7.1.0"
+    workbox-window: "npm:^7.1.0"
   languageName: unknown
   linkType: soft
 

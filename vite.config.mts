@@ -47,7 +47,6 @@ export default defineConfig({
               },
             },
           },
-
           {
             urlPattern: /^https:\/\/cdn\.weatherapi\.com\/.*/i,
             handler: "CacheFirst",
