@@ -3,11 +3,20 @@ import react from "@vitejs/plugin-react";
 import viteTsconfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   // depending on your application, base can also be "/"
   base: "",
-  plugins: [react(), viteTsconfigPaths()],
+  plugins: [
+    react(),
+    viteTsconfigPaths(),
+    VitePWA({
+      strategies: "injectManifest",
+      injectRegister: null,
+      manifest: false,
+    }),
+  ],
   css: {
     postcss: {
       plugins: [tailwindcss(), autoprefixer()],
@@ -16,7 +25,6 @@ export default defineConfig({
   build: {
     // this sets the directory where the build will be output
     outDir: "build",
-    cssCodeSplit: false,
   },
   resolve: {
     alias: {
