@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, Explore, Help, Egg, Agenda, WeatherWeek } from "src/routes";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import App from "src/App";
+import reportWebVitals from "src/reportWebVitals";
+import { Agenda, Egg, Explore, Help, Home, WeatherWeek } from "src/routes";
+import * as serviceWorkerRegistration from "src/serviceWorkerRegistration";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

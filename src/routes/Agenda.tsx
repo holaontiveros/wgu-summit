@@ -1,8 +1,8 @@
 import React from "react";
 import { createContext, useState, useEffect } from "react";
-import Header from "components/Header";
-import DayPicker from "components/agenda/DayPicker";
-import CalendarList from "components/agenda/CalendarList";
+import Header from "src/components/Header";
+import DayPicker from "src/components/agenda/DayPicker";
+import CalendarList from "src/components/agenda/CalendarList";
 
 export const AgendaContext = createContext(null);
 

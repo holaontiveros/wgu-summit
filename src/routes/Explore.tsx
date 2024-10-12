@@ -1,10 +1,11 @@
-import Header from "components/Header";
+import Header from "src/components/Header";
 import React, { useState, useEffect } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import exploreJson from "assets/data/explore.json";
+import exploreJson from "src/assets/data/explore.json";
 
-import Place from "components/Place";
+import Place from "src/components/Place";
 import "swiper/css";
 
 const Explore = () => {

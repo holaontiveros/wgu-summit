@@ -26,11 +26,21 @@ const useWeather = (WeatherContext) => {
         return;
       }
 
+      if (!WeatherKeyEnv) {
+        console.log("No weather key found");
+        setIsLoading(false);
+        return;
+      }
+
       fetch(
         `https://api.weatherapi.com/v1/forecast.json?key=${WeatherKeyEnv}&q=Guadalajara&days=8&aqi=no&alerts=no`,
       )
         .then((response) => response.json())
         .then((data) => {
+          if (data.error) {
+            console.log("Error while fetching weather data");
+            return;
+          }
           setWeather(data);
           localForage.setItem("weather", data);
           localForage.setItem("weatherDate", new Date());

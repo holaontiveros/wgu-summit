@@ -1,4 +1,4 @@
-import "./App.css";
+import "src/App.css";
 import Footer from "src/components/Footer";
 import { Outlet } from "react-router-dom";
 import ScrollToTop from "src/utils/ScrollToTop";

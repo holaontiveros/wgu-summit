@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Header from "components/Header";
-import helpJson from "assets/data/help.json";
-import Contact from "components/Contact";
+import Header from "src/components/Header";
+import helpJson from "src/assets/data/help.json";
+import Contact from "src/components/Contact";
 
 const Help = () => {
   const [helpData, setHelpData] = useState([]);

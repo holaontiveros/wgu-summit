@@ -14,7 +14,7 @@ const WeatherWidget = () => {
   const [weather4days, setWeather4days] = useState(null);
 
   useEffect(() => {
-    if (weather) {
+    if (weather && weather.forecast) {
       setWeather4days(weather.forecast.forecastday.slice(0, 4));
     }
   }, [weather]);
