@@ -16,7 +16,8 @@ export default defineConfig({
       manifest: false,
       workbox: {
         globPatterns: [
-          "**/*.{js,css,html,ico,png,svg,jpg,json,site.webmanifest}",
+          "**/*.{js,css,html,ico,png,svg,jpg,json}",
+          "**/*{site.webmanifest}",
         ],
         runtimeCaching: [
           {
