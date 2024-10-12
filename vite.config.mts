@@ -15,6 +15,9 @@ export default defineConfig({
       strategies: "injectManifest",
       injectRegister: null,
       manifest: false,
+      workbox: {
+        globPatterns: ["**/*.{js,css,html}"],
+      },
     }),
   ],
   css: {
