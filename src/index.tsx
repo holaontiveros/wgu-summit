@@ -1,11 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, Explore, Help, Egg, Agenda, WeatherWeek } from "routes";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import App from "src/App";
+import reportWebVitals from "src/reportWebVitals";
+import { Agenda, Egg, Explore, Help, Home, WeatherWeek } from "src/routes";
+// import * as serviceWorkerRegistration from "src/serviceWorkerRegistration";
+import { registerSW } from "virtual:pwa-register";
+
+const contentCachedEvent = new Event("contentCached");
+const updateAvailableEvent = new Event("updateAvailable");
+
+registerSW({
+  immediate: true,
+  onOfflineReady: () => document.dispatchEvent(contentCachedEvent),
+  onNeedRefresh: () => document.dispatchEvent(updateAvailableEvent),
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -48,7 +59,7 @@ root.render(
   </React.StrictMode>,
 );
 
-serviceWorkerRegistration.register();
+// serviceWorkerRegistration.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

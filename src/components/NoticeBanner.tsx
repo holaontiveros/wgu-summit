@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import noticeJson from "assets/data/notice.json";
+import noticeJson from "src/assets/data/notice.json";
 
 import { BellAlertIcon, TicketIcon } from "@heroicons/react/24/solid";
 

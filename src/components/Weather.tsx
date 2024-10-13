@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import * as localForage from "localforage";
-import { WeatherContext } from "App";
-import { useNavigate } from "react-router-dom";
-import useWeather from "utils/hooks/useWeather";
+import { WeatherContext } from "src/App";
+import useWeather from "src/utils/hooks/useWeather";
 
 export const getParsedWeatherDate = (date) => {
   const parsedDate = new Date(date.replace(/-/g, "/"));
@@ -16,7 +14,7 @@ const WeatherWidget = () => {
   const [weather4days, setWeather4days] = useState(null);
 
   useEffect(() => {
-    if (weather) {
+    if (weather && weather.forecast) {
       setWeather4days(weather.forecast.forecastday.slice(0, 4));
     }
   }, [weather]);

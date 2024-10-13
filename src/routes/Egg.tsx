@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Creator from "components/Creator";
-import javoImage from "assets/creators/javo.png";
-import rodImage from "assets/creators/rod.png";
-import romiImage from "assets/creators/romi.png";
+import Creator from "src/components/Creator";
+import javoImage from "src/assets/creators/javo.png";
+import rodImage from "src/assets/creators/rod.png";
+import romiImage from "src/assets/creators/romi.png";
 
 const Egg = () => {
   const [clickCount, setClickCount] = useState(0);

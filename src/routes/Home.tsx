@@ -1,9 +1,9 @@
 import React from "react";
-import wguLogo from "assets/images/wgu-logo.svg";
-import heroImage2 from "assets/images/hero-home-2.jpg";
-import heroImage3 from "assets/images/home-hero-3.jpg";
-import WeatherWidget from "components/Weather";
-import NoticeBanner from "components/NoticeBanner";
+import wguLogo from "src/assets/images/wgu-logo.svg";
+import heroImage2 from "src/assets/images/hero-home-2.jpg";
+import heroImage3 from "src/assets/images/home-hero-3.jpg";
+import WeatherWidget from "src/components/Weather";
+import NoticeBanner from "src/components/NoticeBanner";
 
 function Home() {
   return (

@@ -1,9 +1,9 @@
-import "./App.css";
-import Footer from "components/Footer";
+import "src/App.css";
+import Footer from "src/components/Footer";
 import { Outlet } from "react-router-dom";
-import ScrollToTop from "utils/ScrollToTop";
+import ScrollToTop from "src/utils/ScrollToTop";
 import React, { createContext, useState, useCallback, useEffect } from "react";
-import useEventListener from "utils/hooks/useEventListener";
+import useEventListener from "src/utils/hooks/useEventListener";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ArrowPathIcon } from "@heroicons/react/20/solid";
@@ -43,7 +43,7 @@ function App() {
       toast(<UpdateAvailableToastMsg />, {
         toastId: "updateAvailable",
         position: "bottom-center",
-        autoClose: true,
+        autoClose: 4000,
         closeOnClick: false,
         draggable: false,
       });
@@ -57,7 +57,7 @@ function App() {
       toast("Content is cached for offline use 😎", {
         toastId: "contentCached",
         position: "bottom-center",
-        autoClose: true,
+        autoClose: 4000,
         closeOnClick: true,
         draggable: false,
       });
