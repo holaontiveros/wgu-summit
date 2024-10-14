@@ -7,6 +7,7 @@ import useEventListener from "src/utils/hooks/useEventListener";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ArrowPathIcon } from "@heroicons/react/20/solid";
+import { Analytics } from "@vercel/analytics/react";
 
 export const WeatherContext = createContext(null);
 
@@ -73,6 +74,7 @@ function App() {
         <ToastContainer />
         <Footer />
       </div>
+      <Analytics />
     </WeatherContext.Provider>
   );
 }
