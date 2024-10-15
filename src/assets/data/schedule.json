@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "tags": [
     { "name": "GENERAL", "color": "gray" },
     { "name": "MEAL", "color": "green" },
@@ -142,7 +142,7 @@
               "time": "12:00 p.m.",
               "duration": "1 h",
               "title": "Lunch",
-              "description": "RIU Plaza Hotel - Decapolis Restaurant",
+              "description": "RIU Plaza Hotel - Terraza Jalísco",
               "color": "green",
               "tags": ["MEAL"]
             }
