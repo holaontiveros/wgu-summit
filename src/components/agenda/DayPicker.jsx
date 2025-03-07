@@ -2,16 +2,21 @@ import React from "react";
 import clsx from "clsx";
 import { useContext } from "react";
 import { AgendaContext } from "src/routes/Agenda";
+import scheduleJson from "assets/data/schedule.json";
+import { TZDate } from "@date-fns/tz";
+
 
 function DayPicker() {
   const { currentDay, setCurrentDay } = useContext(AgendaContext);
 
-  const days = [
-    { day: "MON", date: "OCT 14" },
-    { day: "TUE", date: "OCT 15" },
-    { day: "WED", date: "OCT 16" },
-    { day: "THU", date: "OCT 17" },
-  ];
+  const days = scheduleJson.data.reduce((acc, item) => {
+    const date = new TZDate(item.date, { timeZone: "America/Mexico_City" });
+
+    const day = date.toLocaleString("en-US", { weekday: "short" }).toUpperCase();
+    const dateStr = date.toLocaleString("en-US", { month: "short", day: "2-digit" }).toUpperCase();
+    acc.push({ day, date: dateStr });
+    return acc;
+  }, []);
 
   return (
     <div className="grid grid-cols-4 gap-4 pb-2 pl-6 pr-6 pt-2 text-gray-500">
