@@ -66,7 +66,7 @@ function Home() {
         />
       </div>
 
-      <div className="bg-secondary-700">
+      {/* <div className="bg-secondary-700">
         <div className="container">
           <div className="flex flex-col gap-2 px-6 py-4 text-white">
             <h3 className="headline-3">Guadalajara's Rhythm</h3>
@@ -84,7 +84,7 @@ function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

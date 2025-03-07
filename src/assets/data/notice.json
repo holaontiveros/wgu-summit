@@ -5,7 +5,7 @@
       "icon": "bell",
       "colorBg": "bg-secondary-50",
       "colorIcon": "text-secondary-500",
-      "date": "2024/10/14",
+      "date": "2025-03-31 18:00 GMT-0500",
       "messageTitle": "Welcome Reception",
       "message": "Come mingle and kick off the summit! Don't miss the Reception tonight <strong>at 7:00 p.m. at RIU Plaza Hotel - Salón Vallarta.</strong>"
     },
@@ -13,23 +13,23 @@
       "icon": "bell",
       "colorBg": "bg-tertiary-150",
       "colorIcon": "text-tertiary-500",
-      "date": "2024/10/15",
+      "date": "2025-04-01 18:00 GMT-0500",
       "messageTitle": "Discover and Dine in Tlaquepaque",
-      "message": "Join us at <strong>5:30 p.m. to catch the bus to Tlaquepaque</strong>, where we'll explore the beautiful streets and enjoy dinner at <strong>El Abajeño.</strong>"
+      "message": "Join us at <strong>5:00 p.m. to catch the bus to Vincent</strong>, and enjoy dinner together."
     },
     {
       "icon": "bell",
       "colorBg": "bg-warning-150",
       "colorIcon": "text-primary-500",
-      "date": "2024/10/16",
+      "date": "2025-04-02 18:00 GMT-0500",
       "messageTitle": "Bowling and Lunch Fun!",
-      "message": "Join us for a fun afternoon of bowling and lunch at <strong>Magno Boliches</strong>. We'll meet at <strong>12:30 p.m. to take the bus from the Hotel.</strong>"
+      "message": "Join us for a fun afternoon of lunch and race karts. We'll meet at <strong>12:30 p.m. to take the bus from the Hotel.</strong>. "
     },
     {
       "icon": "bye",
       "colorBg": "bg-secondary-50",
       "colorIcon": "text-secondary-500",
-      "date": "2024/10/17",
+      "date": "2025-04-03 18:00 GMT-0500",
       "messageTitle": "See You Soon!",
       "message": "We hope you enjoyed the experience and wish you a safe journey home. <strong>Looking forward to seeing you soon!</strong>"
     }

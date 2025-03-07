@@ -61,9 +61,7 @@ const Egg = () => {
 
         <h2 className="text-xl font-semibold">Special thanks to:</h2>
         <p>
-          Celerino Herrera for Playlist and Content and our QA Testers Adriana
-          Quijada, Gabriel Romero, Gisela Morales, Johann Jiménez, José Hugo
-          Victoria, Juan Soto and Ulises Vargas.
+          Gisela Morales
         </p>
 
         {showDebuggerButtons && (
