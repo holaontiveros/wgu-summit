@@ -87,6 +87,22 @@
           "link": "https://maps.app.goo.gl/Tddw7pH3czCbJRaA7"
         }
       ]
+    },
+    {
+      "title": "Near the hotel",
+      "places": [
+        {
+          "name": "Rooftop Bar at Hotel Riu Plaza",
+          "hero": "explore/rooftop.jpg",
+          "linkTitle": "Rooftop bar at our hotel"
+        },
+        {
+          "name": "OXXO - Plaza",
+          "hero": "explore/oxxo-plaza.jpg",
+          "linkTitle": "Convenience store",
+          "link": "https://maps.app.goo.gl/1JHpQLQRKLSuouNKA"
+        }
+      ]
     }
   ]
 }

@@ -11,14 +11,22 @@ const Place = ({ place }) => {
         <div className="relative p-2">
           <h3 className="top-[120px] text-sm font-bold">{place.name}</h3>
           <p>{place.description}</p>
-          <a
-            className="text-sm text-secondary-500 underline"
-            target="_blank"
-            rel="noreferrer"
-            href={place.link}
-          >
-            {place.linkTitle}
-          </a>
+
+          {place.link && (
+            <a
+              className="text-sm text-secondary-500 underline"
+              target="_blank"
+              rel="noreferrer"
+              href={place.link}
+            >
+              {place.linkTitle}
+            </a>
+          )}
+
+          {!place.link && (
+            <p className="text-sm text-gray-800">{place.linkTitle}</p>
+          )}
+          
         </div>
       </div>
     </div>
