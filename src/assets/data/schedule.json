@@ -36,6 +36,7 @@
               "duration": "8 h",
               "title": "Attendes Check-in",
               "description": "RIU Plaza Hotel - Front Desk",
+              "link": "https://maps.app.goo.gl/SEFghmybQPE65qJ78",
               "color": "gray",
               "tags": [
                 "GENERAL"
@@ -112,15 +113,23 @@
             },
             {
               "time": "9:20 a.m.",
-              "duration": "15 min",
+              "duration": "10 m",
               "title": "Opening Remarks",
               "description": "",
               "color": "blue",
               "tags": []
             },
             {
+              "time": "9:30 a.m.",
+              "duration": "5 m",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            },
+            {
               "time": "9:35 a.m.",
-              "duration": "1h 10min",
+              "duration": "1 h 10 m",
               "title": "VP Round Tables",
               "description": "",
               "color": "blue",
@@ -280,7 +289,7 @@
             },
             {
               "time": "10:05 a.m.",
-              "duration": "1 h",
+              "duration": "5 m",
               "title": "Break",
               "description": "",
               "color": "gray",
@@ -288,8 +297,8 @@
             },
             {
               "time": "10:10 a.m.",
-              "duration": "55 h",
-              "title": "OKR Ideation Activity",
+              "duration": "55 m",
+              "title": "WIS Presentations",
               "description": "",
               "color": "blue",
               "tags": []
@@ -301,7 +310,7 @@
           "events": [
             {
               "time": "11:05 a.m.",
-              "duration": "5 min",
+              "duration": "5 m",
               "title": "Break",
               "description": "",
               "color": "gray",
@@ -331,17 +340,17 @@
             {
               "time": "12:00 p.m.",
               "duration": "15 m",
-              "title": "Summit Picture",
+              "title": "Closing Remarks",
               "description": "",
               "color": "blue",
               "tags": []
             },
             {
               "time": "12:15 p.m.",
-              "duration": "15 min",
-              "title": "Break",
+              "duration": "15 m",
+              "title": "Summit Picture",
               "description": "",
-              "color": "gray",
+              "color": "blue",
               "tags": []
             }
           ]
@@ -362,9 +371,9 @@
             {
               "time": "1:00 p.m.",
               "duration": "1 h 30 m",
-              "title": "Lunch at Hacienda Canelo",
-              "description": "Hacienda Canelo - View Location",
-              "link": "https://maps.app.goo.gl/DgMAfVpThkaUgHPH8",
+              "title": "Lunch at Carbon Parrilla de Barrio",
+              "description": "Carbon Parrilla de Barrio - View Location",
+              "link": "https://maps.app.goo.gl/LN8MRZwn6sTDCXLbA",
               "color": "green",
               "tags": [
                 "MEAL",
@@ -427,7 +436,7 @@
             },
             {
               "time": "7:30 p.m.",
-              "duration": "1 h 30 min",
+              "duration": "1 h 30 m",
               "title": "Dinner at Bocha Chapalita",
               "description": "Bocha Chapalita - View Location",
               "link": "https://maps.app.goo.gl/cXfYJZjGmra2aSg66",
