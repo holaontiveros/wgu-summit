@@ -7,24 +7,7 @@ import CalendarList from "src/components/agenda/CalendarList";
 export const AgendaContext = createContext(null);
 
 function Agenda() {
-  const today = new Date().getDate();
   const defaultDate = { value: 0 };
-  
-  switch(today) {
-    case 15:
-      defaultDate.value = 1;
-      break;
-    case 16:
-      defaultDate.value = 2;
-      break;
-    case 17:
-      defaultDate.value = 3;
-      break;
-    default:
-      defaultDate.value = 0;
-      break;
-  }
-
   const [currentDay, setCurrentDay] = useState(defaultDate.value);
 
   useEffect(() => {

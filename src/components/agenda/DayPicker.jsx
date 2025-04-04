@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AgendaContext } from "src/routes/Agenda";
 import scheduleJson from "assets/data/schedule.json";
 import { TZDate } from "@date-fns/tz";
@@ -8,14 +8,27 @@ import { TZDate } from "@date-fns/tz";
 
 function DayPicker() {
   const { currentDay, setCurrentDay } = useContext(AgendaContext);
+  const [days, setDays] = useState([]);
 
-  const days = scheduleJson.data.reduce((acc, item) => {
-    const date = new TZDate(item.date, { timeZone: "America/Mexico_City" });
+  useEffect(() => {
+    // Set the days of the week based on current schedule data
+    const parsedDays = scheduleJson.data.reduce((acc, item) => {
+      const date = new TZDate(item.date, { timeZone: "America/Mexico_City" });
 
-    const day = date.toLocaleString("en-US", { weekday: "short" }).toUpperCase();
-    const dateStr = date.toLocaleString("en-US", { month: "short", day: "2-digit" }).toUpperCase();
-    acc.push({ day, date: dateStr });
-    return acc;
+      const day = date.toLocaleString("en-US", { weekday: "short" }).toUpperCase();
+      const dateStr = date.toLocaleString("en-US", { month: "short", day: "2-digit" }).toUpperCase();
+      acc.push({ day, date: dateStr });
+      return acc;
+    }, []);
+
+    setDays(parsedDays);
+
+    // Set the current tab based on the current date
+    const currentDay = new Date().getDate();
+    const index = parsedDays.findIndex((day) => new Date(day.date).getDate() === currentDay);
+    const defaultDate = { value: index !== -1 ? index : 0 };
+
+    setCurrentDay(defaultDate.value);
   }, []);
 
   return (
