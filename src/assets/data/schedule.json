@@ -16,7 +16,7 @@
   ],
   "data": [
     {
-      "date": "2025-03-31T18:00:00.000Z",
+      "date": "2025-10-13T18:00:00.000Z",
       "blocks": [
         {
           "name": "",
@@ -35,8 +35,8 @@
               "time": "2:00 p.m.",
               "duration": "8 h",
               "title": "Attendes Check-in",
-              "description": "RIU Plaza Hotel - Front Desk",
-              "link": "https://maps.app.goo.gl/SEFghmybQPE65qJ78",
+              "description": "Fiesta Americana Hotel - View Location",
+              "link": "https://maps.app.goo.gl/rD7QeM6fFPbMAj7e8",
               "color": "gray",
               "tags": [
                 "GENERAL"
@@ -46,7 +46,7 @@
               "time": "2:00 p.m.",
               "duration": "3 h",
               "title": "Boxed Lunch Pick Up",
-              "description": "RIU Plaza Hotel - Front Desk",
+              "description": "Hotel - La Fronda",
               "color": "green",
               "tags": [
                 "MEAL"
@@ -56,7 +56,7 @@
               "time": "7:00 p.m.",
               "duration": "2 h",
               "title": "Welcome Reception",
-              "description": "RIU Plaza Hotel - Salón Vallarta",
+              "description": "Fiesta Americana Hotel - Violeta Ground Floor",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "date": "2025-04-01T18:00:00.000Z",
+      "date": "2025-10-14T18:00:00.000Z",
       "blocks": [
         {
           "name": "",
@@ -76,7 +76,7 @@
               "time": "7:30 a.m.",
               "duration": "1 h 15 m",
               "title": "Breakfast",
-              "description": "RIU Plaza Hotel - Decapolis Restaurant",
+              "description": "Fiesta Americana Hotel - Moxaico",
               "color": "green",
               "tags": [
                 "MEAL"
@@ -91,20 +91,20 @@
               "time": "9:00 a.m.",
               "duration": "5 m",
               "title": "Welcome",
-              "description": "RIU Plaza Hotel - Guadalajara Room 1-5",
+              "description": "Stelaris Conference Room - 6th floor",
               "color": "blue",
               "tags": []
             },
             {
               "time": "9:05 a.m.",
-              "duration": "10 m",
-              "title": "Cultural Belief Story",
+              "duration": "5 m",
+              "title": "Leadership Principle Story",
               "description": "",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "9:15 a.m.",
+              "time": "9:10 a.m.",
               "duration": "5 m",
               "title": "WIS Video",
               "description": "",
@@ -112,8 +112,8 @@
               "tags": []
             },
             {
-              "time": "9:20 a.m.",
-              "duration": "10 m",
+              "time": "9:15 a.m.",
+              "duration": "15 m",
               "title": "Opening Remarks",
               "description": "",
               "color": "blue",
@@ -121,32 +121,24 @@
             },
             {
               "time": "9:30 a.m.",
-              "duration": "5 m",
-              "title": "Break",
-              "description": "",
-              "color": "gray",
-              "tags": []
-            },
-            {
-              "time": "9:35 a.m.",
-              "duration": "1 h 10 m",
-              "title": "VP Round Tables",
+              "duration": "1 h",
+              "title": "WIS Cheer Creation Contest",
               "description": "",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "10:45 a.m.",
-              "duration": "15 m",
+              "time": "10:30 a.m.",
+              "duration": "10 m",
               "title": "Break",
               "description": "",
               "color": "gray",
               "tags": []
             },
             {
-              "time": "11:00 a.m.",
-              "duration": "1h",
-              "title": "EdTech All Hands",
+              "time": "10:40 a.m.",
+              "duration": "1 h 20 m",
+              "title": "WIS All Hands",
               "description": "",
               "color": "blue",
               "tags": []
@@ -168,8 +160,8 @@
             },
             {
               "time": "1:00 p.m.",
-              "duration": "1 h",
-              "title": "Ice Breaker Activity",
+              "duration": "15 m",
+              "title": "WIS Cheer",
               "description": "",
               "color": "blue",
               "tags": []
@@ -180,25 +172,37 @@
           "name": "",
           "events": [
             {
-              "time": "2:00 p.m.",
-              "duration": "2 h",
+              "time": "1:15 p.m.",
+              "duration": "1 h 55 m",
               "title": "Area Specific Time",
-              "description": "RIU Plaza Hotel - Breakouts",
+              "description": "Hotel Breakout Rooms - View Map",
+              "link": "TODO: Add link",
               "color": "gray",
               "tags": [
                 "GENERAL"
               ]
             },
             {
-              "time": "4:00 p.m.",
-              "duration": "30 m",
-              "title": "Closing Remarks",
-              "description": "",
+              "time": "3:10 p.m.",
+              "duration": "1 h 20 m",
+              "title": "Round Tables",
+              "description": "Hotel Breakout Rooms - View Map",
+              "link": "TODO: Add link",
+              "color": "gray",
+              "tags": [
+                "GENERAL"
+              ]
+            },
+            {
+              "time": "4:30 p.m.",
+              "duration": "15 m",
+              "title": "Closing the Day",
+              "description": "Stelaris Conference Room - 6th floor",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "4:30 p.m.",
+              "time": "4:45 p.m.",
               "duration": "30 m",
               "title": "Break",
               "description": "",
@@ -211,10 +215,10 @@
           "name": "",
           "events": [
             {
-              "time": "5:00 p.m.",
-              "duration": "30 m",
-              "title": "Meet to board bus to dinner",
-              "description": "RIU Plaza Hotel - Conference Room",
+              "time": "5:15 p.m.",
+              "duration": "15 m",
+              "title": "Meet to walk to dinner",
+              "description": "Fiesta Americana Hotel - Lobby",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
@@ -224,8 +228,8 @@
               "time": "5:30 p.m.",
               "duration": "2 h",
               "title": "Dinner",
-              "description": "The Vincent - View Location",
-              "link": "https://maps.app.goo.gl/zttRPjKaAKR7VhNC9",
+              "description": "El Abajeño - View Location",
+              "link": "https://maps.app.goo.gl/EXhvZiEbwMVPhaxH6",
               "color": "green",
               "tags": [
                 "MEAL"
@@ -233,19 +237,9 @@
             },
             {
               "time": "7:30 p.m.",
-              "duration": "30 m",
-              "title": "Bus to Hotel",
-              "description": "The Vincent Restaurant",
-              "color": "yellow",
-              "tags": [
-                "SOCIAL"
-              ]
-            },
-            {
-              "time": "8:00 p.m.",
-              "duration": "",
-              "title": "Drinks at Roof Top - Optional",
-              "description": "RIU Plaza Hotel - Roof Top Bar",
+              "duration": "15 m",
+              "title": "Walk back to Hotel",
+              "description": "El Abajeño",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
@@ -256,7 +250,7 @@
       ]
     },
     {
-      "date": "2025-04-02T18:00:00.000Z",
+      "date": "2025-10-15T18:00:00.000Z",
       "blocks": [
         {
           "name": "",
@@ -265,7 +259,7 @@
               "time": "7:30 a.m.",
               "duration": "1 h 15 m",
               "title": "Breakfast",
-              "description": "RIU Plaza Hotel - Decapolis Restaurant",
+              "description": "Fiesta Americana Hotel - Moxaico",
               "color": "green",
               "tags": [
                 "MEAL"
@@ -274,31 +268,23 @@
             {
               "time": "9:00 a.m.",
               "duration": "5 m",
-              "title": "Welcome",
-              "description": "RIU Plaza Hotel - Guadalajara Room 1-5",
+              "title": "Agenda Review",
+              "description": "Stelaris Conference Room - 6th floor",
               "color": "blue",
               "tags": []
             },
             {
               "time": "9:05 a.m.",
-              "duration": "1 h",
-              "title": "Scavenger Hunt - Cultural Beliefs",
+              "duration": "30 m",
+              "title": "Social Media for Professionals: Building your Brand on Linkedin",
               "description": "",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "10:05 a.m.",
-              "duration": "5 m",
-              "title": "Break",
-              "description": "",
-              "color": "gray",
-              "tags": []
-            },
-            {
-              "time": "10:10 a.m.",
-              "duration": "55 m",
-              "title": "WIS Presentations",
+              "time": "9:35 a.m.",
+              "duration": "50 m",
+              "title": "Q&A - FOW",
               "description": "",
               "color": "blue",
               "tags": []
@@ -309,11 +295,27 @@
           "name": "",
           "events": [
             {
-              "time": "11:05 a.m.",
-              "duration": "5 m",
+              "time": "10:25 a.m.",
+              "duration": "1 h 15 m",
+              "title": "Hackathon Presentations",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "11:40 a.m.",
+              "duration": "10 m",
               "title": "Break",
               "description": "",
               "color": "gray",
+              "tags": []
+            },
+            {
+              "time": "11:50 a.m.",
+              "duration": "15 m",
+              "title": "Hackathon Award Ceremony",
+              "description": "",
+              "color": "blue",
               "tags": []
             }
           ]
@@ -322,23 +324,15 @@
           "name": "",
           "events": [
             {
-              "time": "11:10 a.m.",
-              "duration": "20 m",
+              "time": "12:05 a.m.",
+              "duration": "25 m",
               "title": "Leadership Thoughts",
               "description": "",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "11:30 a.m.",
-              "duration": "30 m",
-              "title": "Q&A Panel with Karina and VPs",
-              "description": "",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "12:00 p.m.",
+              "time": "12:30 a.m.",
               "duration": "15 m",
               "title": "Closing Remarks",
               "description": "",
@@ -346,7 +340,15 @@
               "tags": []
             },
             {
-              "time": "12:15 p.m.",
+              "time": "12:45 p.m.",
+              "duration": "15 m",
+              "title": "WIS Cheer",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "1:00 p.m.",
               "duration": "15 m",
               "title": "Summit Picture",
               "description": "",
@@ -359,21 +361,21 @@
           "name": "",
           "events": [
             {
-              "time": "12:30 p.m.",
+              "time": "1:15 p.m.",
               "duration": "30 m",
-              "title": "Meet to board bus to Lunch and Race Karts",
-              "description": "RIU Plaza Hotel - Guadalajara Conference Room",
+              "title": "Meet to board the bus for luch",
+              "description": "Fiesta Americana Hotel - Lobby",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
               ]
             },
             {
-              "time": "1:00 p.m.",
-              "duration": "1 h 30 m",
-              "title": "Lunch at Carbon Parrilla de Barrio",
-              "description": "Carbon Parrilla de Barrio - View Location",
-              "link": "https://maps.app.goo.gl/LN8MRZwn6sTDCXLbA",
+              "time": "1:45 p.m.",
+              "duration": "1 h 15 m",
+              "title": "Lunch at Hacienda Canelo",
+              "description": "Hacienda Canelo - View Location",
+              "link": "https://maps.app.goo.gl/jKdWyQTNFRC9dE6u7",
               "color": "green",
               "tags": [
                 "MEAL",
@@ -381,43 +383,14 @@
               ]
             },
             {
-              "time": "2:30 p.m.",
-              "duration": "30 m",
-              "title": "Bus to Race Karts",
-              "description": "Hacienda Canelo Restaurant",
-              "color": "yellow",
-              "tags": [
-                "SOCIAL"
-              ]
-            },
-            {
               "time": "3:00 p.m.",
-              "duration": "3 h",
-              "title": "Race Karts",
-              "description": "Volta Racing Karts - View Location",
-              "link": "https://maps.app.goo.gl/7Sjpa1HHXMcfoBWK7",
-              "color": "yellow",
-              "tags": [
-                "SOCIAL"
-              ]
-            },
-            {
-              "time": "6:00 p.m.",
               "duration": "30 m",
               "title": "Bus to Hotel",
-              "description": "Volta Racing Karts",
+              "description": "Hacienda Canelo",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
               ]
-            },
-            {
-              "time": "6:30 p.m.",
-              "duration": "30 m",
-              "title": "Break",
-              "description": "",
-              "color": "gray",
-              "tags": []
             }
           ]
         },
@@ -425,34 +398,31 @@
           "name": "",
           "events": [
             {
-              "time": "7:00 p.m.",
+              "time": "3:30 p.m.",
               "duration": "30 m",
-              "title": "Meet to board bus to Dinner",
-              "description": "RIU Plaza Hotel - Conference Room",
+              "title": "Break",
+              "description": "",
+              "color": "gray",
+              "tags": []
+            },
+            {
+              "time": "4:00 p.m.",
+              "duration": "2 h",
+              "title": "Board Games Night",
+              "description": "Hotel - Restaurant Galería Fiesta",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
               ]
             },
             {
-              "time": "7:30 p.m.",
-              "duration": "1 h 30 m",
-              "title": "Dinner at Bocha Chapalita",
-              "description": "Bocha Chapalita - View Location",
-              "link": "https://maps.app.goo.gl/cXfYJZjGmra2aSg66",
+              "time": "6:00 p.m.",
+              "duration": "2 h",
+              "title": "Dinner",
+              "description": "Hotel - Restaurant Galería Fiesta",
               "color": "green",
               "tags": [
                 "MEAL"
-              ]
-            },
-            {
-              "time": "9:00 p.m.",
-              "duration": "30 m",
-              "title": "Bus to Hotel",
-              "description": "Bocha Chapalita Restaurant",
-              "color": "yellow",
-              "tags": [
-                "SOCIAL"
               ]
             }
           ]
@@ -460,7 +430,7 @@
       ]
     },
     {
-      "date": "2025-04-03T18:00:00.000Z",
+      "date": "2025-10-16T18:00:00.000Z",
       "blocks": [
         {
           "name": "",
@@ -477,9 +447,9 @@
           "events": [
             {
               "time": "7:30 a.m.",
-              "duration": "1 h 15 m",
+              "duration": "2 h 30 m",
               "title": "Breakfast",
-              "description": "RIU Plaza Hotel - Restaurant",
+              "description": "Fiesta Americana Hotel - Moxaico",
               "color": "green",
               "tags": [
                 "MEAL"

@@ -86,16 +86,16 @@
       "description": "For assistance in the Hotel with your accommodation details or inquiries.",
       "contacts": [
         {
-          "name": "Yolanda Campos",
-          "description": "RIU Plaza Hotel",
+          "name": "Isaac Soto",
+          "description": "Fiesta Americana Hotel",
           "contactMethods": [
             {
               "type": "phone",
-              "value": "tel:3311547560"
+              "value": "tel:3317076356"
             },
             {
               "type": "email",
-              "value": "mailto:ycampos@riu.com"
+              "value": "mailto:ventas1fagd@posadas.com"
             }
           ]
         }

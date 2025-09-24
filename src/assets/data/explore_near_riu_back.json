@@ -1,0 +1,28 @@
+{
+  "title": "Near the hotel",
+  "places": [
+    {
+      "name": "Rooftop Bar at Hotel Riu Plaza",
+      "hero": "explore/rooftop.jpg",
+      "linkTitle": "Rooftop bar at our hotel"
+    },
+    {
+      "name": "OXXO Plaza - Convenience store",
+      "hero": "explore/oxxo-plaza.jpg",
+      "linkTitle": "See location",
+      "link": "https://maps.app.goo.gl/1JHpQLQRKLSuouNKA"
+    },
+    {
+      "name": "Los amores - Restaurant",
+      "hero": "explore/los-amores.jpg",
+      "linkTitle": "See location",
+      "link": "https://maps.app.goo.gl/gppqY9fzsqwgMg6k9"
+    },
+    {
+      "name": "El Depósito World Beer Store",
+      "hero": "explore/el-deposito.jpg",
+      "linkTitle": "See location",
+      "link": "https://maps.app.goo.gl/DYfBnauKDq7AHeYT9"
+    }
+  ]
+}

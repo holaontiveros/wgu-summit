@@ -5,33 +5,33 @@
       "icon": "bell",
       "colorBg": "bg-secondary-50",
       "colorIcon": "text-secondary-500",
-      "date": "2025-03-31T18:00:00.000Z",
+      "date": "2025-10-13T18:00:00.000Z",
       "messageTitle": "Welcome Reception",
-      "message": "Come mingle and kick off the summit! Don't miss the Reception tonight <strong>at 7:00 p.m. at RIU Plaza Hotel - Salón Vallarta.</strong>"
+      "message": "<p>Come mingle and kick off the summit! Don&rsquo;t miss the Reception tonight at 7:00 p.m. <strong>at Fiesta Americana Hotel - Violeta Ground Floor.</strong></p>"
     },
     {
       "icon": "bell",
       "colorBg": "bg-tertiary-150",
       "colorIcon": "text-tertiary-500",
-      "date": "2025-04-01T18:00:00.000Z",
-      "messageTitle": "Discover and Dine in Guadalajara",
-      "message": "Join us at <strong>5:00 p.m. to catch the bus to Vincent</strong>, and enjoy dinner together."
+      "date": "2025-10-14T18:00:00.000Z",
+      "messageTitle": "Dine in Guadalajara ",
+      "message": "<p>Join us at <strong>5:15 p.m. to walk to El Abaje&ntilde;o</strong>, and enjoy dinner together.</p>"
     },
     {
       "icon": "bell",
       "colorBg": "bg-warning-150",
       "colorIcon": "text-primary-500",
-      "date": "2025-04-02T18:00:00.000Z",
-      "messageTitle": "Bowling and Lunch Fun!",
-      "message": "Join us for a fun afternoon of lunch and race karts. We'll meet at <strong>12:30 p.m. to take the bus from the Hotel.</strong>. "
+      "date": "2025-10-15T18:00:00.000Z",
+      "messageTitle": "Games Night Fun!",
+      "message": "<p>Join us for a fun afternoon of board games. We&rsquo;ll meet at <strong>4:00 p.m. at Restaurant Galer&iacute;a Fiesta.</strong></p>"
     },
     {
       "icon": "bye",
       "colorBg": "bg-secondary-50",
       "colorIcon": "text-secondary-500",
-      "date": "2025-04-03T18:00:00.000Z",
+      "date": "2025-10-16T18:00:00.000Z",
       "messageTitle": "See You Soon!",
-      "message": "We hope you enjoyed the experience and wish you a safe journey home. <strong>Looking forward to seeing you soon!</strong>"
+      "message": "<p>We hope you enjoyed the experience and wish you a safe journey home. <strong>Looking forward to seeing you soon!</strong></p>"
     }
   ]
 }
