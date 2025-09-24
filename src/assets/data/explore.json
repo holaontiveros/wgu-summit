@@ -92,27 +92,22 @@
       "title": "Near the hotel",
       "places": [
         {
-          "name": "Rooftop Bar at Hotel Riu Plaza",
-          "hero": "explore/rooftop.jpg",
-          "linkTitle": "Rooftop bar at our hotel"
-        },
-        {
           "name": "OXXO Plaza - Convenience store",
-          "hero": "explore/oxxo-plaza.jpg",
+          "hero": "explore/oxxo-fiesta.jpg",
           "linkTitle": "See location",
-          "link": "https://maps.app.goo.gl/1JHpQLQRKLSuouNKA"
+          "link": "https://maps.app.goo.gl/XqLnvJ21CyMNSBhu7"
         },
         {
-          "name": "Los amores - Restaurant",
-          "hero": "explore/los-amores.jpg",
+          "name": "Farmacia Benavides - Drugstore",
+          "hero": "explore/benavides-fiesta.jpg",
           "linkTitle": "See location",
-          "link": "https://maps.app.goo.gl/gppqY9fzsqwgMg6k9"
+          "link": "https://maps.app.goo.gl/JbYyg8t7o17JUe3v9"
         },
         {
-          "name": "El Depósito World Beer Store",
-          "hero": "explore/el-deposito.jpg",
+          "name": "Taquería Minerva - 24/7 tacos",
+          "hero": "explore/taqueria-minerva.png",
           "linkTitle": "See location",
-          "link": "https://maps.app.goo.gl/DYfBnauKDq7AHeYT9"
+          "link": "https://maps.app.goo.gl/dpvrGKRm25n9nwFL8"
         }
       ]
     }

@@ -4,6 +4,7 @@ import heroImage2 from "src/assets/images/hero-home-2.jpg";
 import heroImage3 from "src/assets/images/home-hero-3.jpg";
 import WeatherWidget from "src/components/Weather";
 import NoticeBanner from "src/components/NoticeBanner";
+import PushNotificationsRequest from 'src/components/PushNotificationsRequest';
 
 function Home() {
   return (
@@ -39,6 +40,10 @@ function Home() {
           className="mb-8 mt-6 w-full"
         />
       </div>
+
+      {/* <div>
+        <PushNotificationsRequest />
+      </div> */}
 
       <div className="bg-white pt-8">
         <div className="container mx-auto flex flex-col gap-2 px-6">
