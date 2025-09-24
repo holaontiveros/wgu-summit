@@ -25,6 +25,15 @@ const Help = () => {
     <div>
       <Header title="Summit Help" />
 
+      {/* <div className="bg-white mb-6">
+        <div className="container px-6 py-3">
+          <h2 className="mb-2 text-lg font-bold text-primary-500">
+            Code of conduct
+          </h2>
+          <p>Remember</p>
+        </div>
+      </div> */}
+
       <div>
         {helpData.map((data, index) => (
           <div key={index} className="mb-6 bg-white">
