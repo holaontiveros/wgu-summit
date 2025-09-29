@@ -1,6 +1,6 @@
 import React from "react";
 import wguLogo from "src/assets/images/wgu-logo.svg";
-import heroImage2 from "src/assets/images/hero-home-2.jpg";
+import heroImage4 from "src/assets/images/hero-home-4.jpg";
 import heroImage3 from "src/assets/images/home-hero-3.jpg";
 import WeatherWidget from "src/components/Weather";
 import NoticeBanner from "src/components/NoticeBanner";
@@ -35,7 +35,7 @@ function Home() {
         </div>
 
         <img
-          src={heroImage2}
+          src={heroImage4}
           alt="WGU WIS Team - Monterrey 2024"
           className="mb-8 mt-6 w-full"
         />

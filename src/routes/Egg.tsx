@@ -61,7 +61,7 @@ const Egg = () => {
 
         <h2 className="text-xl font-semibold">Special thanks to:</h2>
         <p>
-          Karina Garcia, Moroni Aragon, Alex Simental, Margarita Urtecho, Josue Comoto, Daniel Basulto, Christian Cortes, Johann Jimenez
+          Karina Garcia, Moroni Aragon, Alex Simental, Naomi García, Josue Comoto, Javier Solis
         </p>
 
         {showDebuggerButtons && (

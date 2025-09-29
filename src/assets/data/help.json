@@ -20,16 +20,12 @@
           ]
         },
         {
-          "name": "Juan Pablo Aguilar",
-          "description": "Business Intelligence Analyst - WIS",
+          "name": "Karina Ponce",
+          "description": "Senior Director, Engineering WIS",
           "contactMethods": [
             {
               "type": "email",
-              "value": "mailto:juanpablo.aguilar@wgu.edu"
-            },
-            {
-              "type": "phone",
-              "value": "tel:+526672017858"
+              "value": "mailto:karina.garciaponce@wgu.edu"
             }
           ]
         },

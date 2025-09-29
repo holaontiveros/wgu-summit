@@ -2,6 +2,29 @@
   "version": "1.0",
   "data": [
     {
+      "title": "Near the hotel",
+      "places": [
+        {
+          "name": "OXXO Plaza - Cotnvenience store",
+          "hero": "explore/oxxo-fiesta.jpg",
+          "linkTitle": "See location",
+          "link": "https://maps.app.goo.gl/YCUygX7isA2Us8Uo6"
+        },
+        {
+          "name": "Farmacia Benavides - Drugstore",
+          "hero": "explore/benavides-fiesta.jpg",
+          "linkTitle": "See location",
+          "link": "https://maps.app.goo.gl/JbYyg8t7o17JUe3v9"
+        },
+        {
+          "name": "Taquería Minerva - 24/7 tacos",
+          "hero": "explore/taqueria-minerva.png",
+          "linkTitle": "See location",
+          "link": "https://maps.app.goo.gl/dpvrGKRm25n9nwFL8"
+        }
+      ]
+    },
+    {
       "title": "Streed Food",
       "places": [
         {
@@ -85,29 +108,6 @@
           "hero": "explore/tepatitlan.jpg",
           "linkTitle": "See location",
           "link": "https://maps.app.goo.gl/UjCZM5Vu7pzTzWj17"
-        }
-      ]
-    },
-    {
-      "title": "Near the hotel",
-      "places": [
-        {
-          "name": "OXXO Plaza - Convenience store",
-          "hero": "explore/oxxo-fiesta.jpg",
-          "linkTitle": "See location",
-          "link": "https://maps.app.goo.gl/XqLnvJ21CyMNSBhu7"
-        },
-        {
-          "name": "Farmacia Benavides - Drugstore",
-          "hero": "explore/benavides-fiesta.jpg",
-          "linkTitle": "See location",
-          "link": "https://maps.app.goo.gl/JbYyg8t7o17JUe3v9"
-        },
-        {
-          "name": "Taquería Minerva - 24/7 tacos",
-          "hero": "explore/taqueria-minerva.png",
-          "linkTitle": "See location",
-          "link": "https://maps.app.goo.gl/dpvrGKRm25n9nwFL8"
         }
       ]
     }
