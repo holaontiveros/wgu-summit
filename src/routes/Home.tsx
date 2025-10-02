@@ -4,7 +4,6 @@ import heroImage4 from "src/assets/images/hero-home-4.jpg";
 import heroImage3 from "src/assets/images/home-hero-3.jpg";
 import WeatherWidget from "src/components/Weather";
 import NoticeBanner from "src/components/NoticeBanner";
-import PushNotificationsRequest from 'src/components/PushNotificationsRequest';
 
 function Home() {
   return (
