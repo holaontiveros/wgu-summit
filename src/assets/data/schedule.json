@@ -123,7 +123,8 @@
               "time": "9:30 a.m.",
               "duration": "1 h",
               "title": "WIS Cheer Creation Contest",
-              "description": "",
+              "description": "View your assigned team",
+              "link": "assets/docs/summit-teams.pdf",
               "color": "blue",
               "tags": []
             },
@@ -176,7 +177,7 @@
               "duration": "1 h 55 m",
               "title": "Area Specific Time",
               "description": "Hotel Breakout Rooms - View Map",
-              "link": "TODO: Add link",
+              "link": "assets/images/agenda/breakout-map.jpg",
               "color": "gray",
               "tags": [
                 "GENERAL"
@@ -187,7 +188,7 @@
               "duration": "1 h 20 m",
               "title": "Round Tables",
               "description": "Hotel Breakout Rooms - View Map",
-              "link": "TODO: Add link",
+              "link": "assets/images/agenda/breakout-map.jpg",
               "color": "gray",
               "tags": [
                 "GENERAL"
