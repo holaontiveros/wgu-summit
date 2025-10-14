@@ -91,7 +91,7 @@
               "time": "9:00 a.m.",
               "duration": "5 m",
               "title": "Welcome",
-              "description": "Stelaris Conference Room - 6th floor",
+              "description": "Stelaris Conference Room - SF floor",
               "color": "blue",
               "tags": []
             },
@@ -198,7 +198,7 @@
               "time": "4:30 p.m.",
               "duration": "15 m",
               "title": "Closing the Day",
-              "description": "Stelaris Conference Room - 6th floor",
+              "description": "Stelaris Conference Room - SF floor",
               "color": "blue",
               "tags": []
             },
@@ -270,7 +270,7 @@
               "time": "9:00 a.m.",
               "duration": "5 m",
               "title": "Agenda Review",
-              "description": "Stelaris Conference Room - 6th floor",
+              "description": "Stelaris Conference Room - SF floor",
               "color": "blue",
               "tags": []
             },
@@ -284,8 +284,8 @@
             },
             {
               "time": "9:35 a.m.",
-              "duration": "50 m",
-              "title": "Q&A - FOW",
+              "duration": "1 h 15 m",
+              "title": "Hackathon Presentations",
               "description": "",
               "color": "blue",
               "tags": []
@@ -296,15 +296,7 @@
           "name": "",
           "events": [
             {
-              "time": "10:25 a.m.",
-              "duration": "1 h 15 m",
-              "title": "Hackathon Presentations",
-              "description": "",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "11:40 a.m.",
+              "time": "10:50 a.m.",
               "duration": "10 m",
               "title": "Break",
               "description": "",
@@ -312,9 +304,17 @@
               "tags": []
             },
             {
-              "time": "11:50 a.m.",
+              "time": "11:00 a.m.",
               "duration": "15 m",
               "title": "Hackathon Award Ceremony",
+              "description": "",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "11:15 a.m.",
+              "duration": "50 m",
+              "title": "Q&A - FOW",
               "description": "",
               "color": "blue",
               "tags": []
@@ -333,17 +333,9 @@
               "tags": []
             },
             {
-              "time": "12:30 a.m.",
+              "time": "12:45 a.m.",
               "duration": "15 m",
               "title": "Closing Remarks",
-              "description": "",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "12:45 p.m.",
-              "duration": "15 m",
-              "title": "WIS Cheer",
               "description": "",
               "color": "blue",
               "tags": []
