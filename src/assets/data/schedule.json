@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "tags": [
     {
       "name": "GENERAL",
@@ -16,47 +16,36 @@
   ],
   "data": [
     {
-      "date": "2025-10-13T18:00:00.000Z",
+      "date": "2026-05-04T18:00:00.000Z",
       "blocks": [
         {
-          "name": "",
-          "events": [
-            {
-              "time": "8:00 a.m.",
-              "title": "Attendees Travel Day",
-              "allDay": true
-            }
-          ]
-        },
-        {
-          "name": "",
+          "name": "Summit Attendees Travel Day",
           "events": [
             {
               "time": "2:00 p.m.",
-              "duration": "8 h",
-              "title": "Attendes Check-in",
-              "description": "Fiesta Americana Hotel - View Location",
-              "link": "https://maps.app.goo.gl/rD7QeM6fFPbMAj7e8",
+              "duration": "3 h",
+              "title": "Check-in & Pick up boxed dinners",
+              "description": "Riu Plaza Hotel - Lobby",
               "color": "gray",
               "tags": [
                 "GENERAL"
               ]
             },
             {
-              "time": "2:00 p.m.",
-              "duration": "3 h",
-              "title": "Boxed Lunch Pick Up",
-              "description": "Hotel - La Fronda",
-              "color": "green",
+              "time": "4:00 p.m.",
+              "duration": "2 h",
+              "title": "In person Dry run",
+              "description": "Conference Room Guadalajara 1-5 (Main Floor)",
+              "color": "gray",
               "tags": [
-                "MEAL"
+                "GENERAL"
               ]
             },
             {
-              "time": "7:00 p.m.",
-              "duration": "2 h",
-              "title": "Welcome Reception",
-              "description": "Fiesta Americana Hotel - Violeta Ground Floor",
+              "time": "6:00 p.m.",
+              "duration": "3 h",
+              "title": "Welcome Reception/Casino Night",
+              "description": "Terraza Jalisco (1st Floor)",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
@@ -67,16 +56,16 @@
       ]
     },
     {
-      "date": "2025-10-14T18:00:00.000Z",
+      "date": "2026-05-05T18:00:00.000Z",
       "blocks": [
         {
           "name": "",
           "events": [
             {
               "time": "7:30 a.m.",
-              "duration": "1 h 15 m",
+              "duration": "1 h 30 m",
               "title": "Breakfast",
-              "description": "Fiesta Americana Hotel - Moxaico",
+              "description": "Decapolis Restaurant (1st Floor)",
               "color": "green",
               "tags": [
                 "MEAL"
@@ -85,26 +74,26 @@
           ]
         },
         {
-          "name": "Presentation Block Starts",
+          "name": "Presentation Block",
           "events": [
             {
               "time": "9:00 a.m.",
-              "duration": "5 m",
-              "title": "Welcome",
-              "description": "Stelaris Conference Room - SF floor",
+              "duration": "7 m",
+              "title": "Welcome / Review Agenda (Day 1)",
+              "description": "MC - Karina",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "9:05 a.m.",
-              "duration": "5 m",
-              "title": "Leadership Principle Story",
-              "description": "",
+              "time": "9:07 a.m.",
+              "duration": "11 m",
+              "title": "Leadership principles story",
+              "description": "Luis Chacon & Laura Jimenez",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "9:10 a.m.",
+              "time": "9:18 a.m.",
               "duration": "5 m",
               "title": "WIS Video",
               "description": "",
@@ -112,34 +101,41 @@
               "tags": []
             },
             {
-              "time": "9:15 a.m.",
+              "time": "9:23 a.m.",
+              "duration": "12 m",
+              "title": "Accelerating Tech Enabled Innovation",
+              "description": "Nadeem",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "9:35 a.m.",
+              "duration": "1 h 5 m",
+              "title": "Puzzle Activity",
+              "description": "WIS Senior Managers - The Puzzle Challenge",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "10:40 a.m.",
               "duration": "15 m",
-              "title": "Opening Remarks",
-              "description": "",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "9:30 a.m.",
-              "duration": "1 h",
-              "title": "WIS Cheer Creation Contest",
-              "description": "View your assigned team",
-              "link": "https://drive.google.com/file/d/1HcpqtYEl30mx-rJNRVSfrUZWnkFtb8CT/view?usp=sharing",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "10:30 a.m.",
-              "duration": "10 m",
               "title": "Break",
               "description": "",
               "color": "gray",
               "tags": []
             },
             {
-              "time": "10:40 a.m.",
-              "duration": "1 h 20 m",
-              "title": "WIS All Hands",
+              "time": "10:55 a.m.",
+              "duration": "50 m",
+              "title": "FY27 Vision Panel",
+              "description": "Moderated by Nadeem - Hank, Rajeev, James, John, Jennie, Chelsea, Troy",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "11:45 a.m.",
+              "duration": "15 m",
+              "title": "Summit Picture",
               "description": "",
               "color": "blue",
               "tags": []
@@ -153,7 +149,7 @@
               "time": "12:00 p.m.",
               "duration": "1 h",
               "title": "Lunch",
-              "description": "Hotel - Restaurant Galería Fiesta",
+              "description": "Terraza Jalisco (1st Floor)",
               "color": "green",
               "tags": [
                 "MEAL"
@@ -162,75 +158,76 @@
             {
               "time": "1:00 p.m.",
               "duration": "15 m",
-              "title": "WIS Cheer",
-              "description": "",
+              "title": "Energizer Activity",
+              "description": "Karina/Moroni",
               "color": "blue",
               "tags": []
             }
           ]
         },
         {
-          "name": "",
+          "name": "Afternoon Sessions",
           "events": [
             {
               "time": "1:15 p.m.",
-              "duration": "1 h 55 m",
-              "title": "Area Specific Time",
-              "description": "Hotel Breakout Rooms - View Map",
-              "link": "assets/images/agenda/breakout-map.jpg",
-              "color": "gray",
-              "tags": [
-                "GENERAL"
-              ]
-            },
-            {
-              "time": "3:10 p.m.",
-              "duration": "1 h 20 m",
-              "title": "Round Tables",
-              "description": "Hotel Breakout Rooms - View Map",
-              "link": "assets/images/agenda/breakout-map.jpg",
-              "color": "gray",
-              "tags": [
-                "GENERAL"
-              ]
-            },
-            {
-              "time": "4:30 p.m.",
-              "duration": "15 m",
-              "title": "Closing the Day",
-              "description": "Stelaris Conference Room - SF floor",
+              "duration": "45 m",
+              "title": "Tech Talk",
+              "description": "Chris Boyack",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "4:45 p.m.",
-              "duration": "30 m",
+              "time": "2:00 p.m.",
+              "duration": "2 h",
+              "title": "AI Hackathon",
+              "description": "Chris Boyack/ Karina - pods of 8 engineers, 12 teams total - 4 different projects / categories",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "4:00 p.m.",
+              "duration": "15 m",
               "title": "Break",
               "description": "",
               "color": "gray",
               "tags": []
+            },
+            {
+              "time": "4:15 p.m.",
+              "duration": "1 h",
+              "title": "Share and vote (Hackathon)",
+              "description": "Courtney and Nadeem - Pitch 10mins per team",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "5:15 p.m.",
+              "duration": "30 m",
+              "title": "Winners announced for Hackathon",
+              "description": "Courtney and Nadeem - 1 winner for each project category - gift card awards",
+              "color": "blue",
+              "tags": []
             }
           ]
         },
         {
-          "name": "",
+          "name": "Evening Activities",
           "events": [
             {
-              "time": "5:15 p.m.",
+              "time": "5:45 p.m.",
               "duration": "15 m",
-              "title": "Meet to walk to dinner",
-              "description": "Fiesta Americana Hotel - Lobby",
+              "title": "Board the bus for dinner",
+              "description": "Riu Plaza Hotel - Lobby",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
               ]
             },
             {
-              "time": "5:30 p.m.",
-              "duration": "2 h",
+              "time": "6:00 p.m.",
+              "duration": "1 h 30 m",
               "title": "Dinner",
-              "description": "El Abajeño - View Location",
-              "link": "https://maps.app.goo.gl/EXhvZiEbwMVPhaxH6",
+              "description": "La Tequila",
               "color": "green",
               "tags": [
                 "MEAL"
@@ -239,8 +236,8 @@
             {
               "time": "7:30 p.m.",
               "duration": "15 m",
-              "title": "Walk back to Hotel",
-              "description": "El Abajeño",
+              "title": "Board the bus back to the hotel",
+              "description": "La Tequila",
               "color": "yellow",
               "tags": [
                 "SOCIAL"
@@ -251,201 +248,105 @@
       ]
     },
     {
-      "date": "2025-10-15T18:00:00.000Z",
+      "date": "2026-05-06T18:00:00.000Z",
       "blocks": [
         {
           "name": "",
           "events": [
             {
-              "time": "7:30 a.m.",
-              "duration": "1 h 15 m",
+              "time": "7:00 a.m.",
+              "duration": "1 h 30 m",
               "title": "Breakfast",
-              "description": "Fiesta Americana Hotel - Moxaico",
+              "description": "Decapolis Restaurant (1st Floor)",
               "color": "green",
               "tags": [
                 "MEAL"
               ]
             },
             {
-              "time": "9:00 a.m.",
-              "duration": "5 m",
-              "title": "Agenda Review",
-              "description": "Stelaris Conference Room - SF floor",
+              "time": "8:30 a.m.",
+              "duration": "15 m",
+              "title": "Agenda Review and Last day recap",
+              "description": "MC - Karina - Welcome, review agenda, morning stretch/yoga",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "9:05 a.m.",
-              "duration": "30 m",
-              "title": "Social Media for Professionals: Building your Brand on Linkedin",
+              "time": "8:45 a.m.",
+              "duration": "15 m",
+              "title": "Room transition time",
               "description": "",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "9:35 a.m.",
-              "duration": "1 h 15 m",
-              "title": "Hackathon Presentations",
-              "description": "",
-              "color": "blue",
+              "color": "gray",
               "tags": []
             }
           ]
         },
         {
-          "name": "",
+          "name": "Final Day Sessions",
           "events": [
             {
-              "time": "10:50 a.m.",
-              "duration": "10 m",
+              "time": "9:00 a.m.",
+              "duration": "1 h 30 m",
+              "title": "Breakout rooms",
+              "description": "VPs",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "10:30 a.m.",
+              "duration": "15 m",
               "title": "Break",
               "description": "",
               "color": "gray",
               "tags": []
             },
             {
-              "time": "11:00 a.m.",
-              "duration": "15 m",
-              "title": "Hackathon Award Ceremony",
-              "description": "",
+              "time": "10:45 a.m.",
+              "duration": "45 m",
+              "title": "Tech Talk",
+              "description": "Tishya Poteet",
               "color": "blue",
               "tags": []
             },
             {
-              "time": "11:15 a.m.",
-              "duration": "50 m",
-              "title": "Q&A - FOW",
-              "description": "",
+              "time": "11:30 a.m.",
+              "duration": "15 m",
+              "title": "Lives Changed by Your Work",
+              "description": "Courtney Hills McBeth",
+              "color": "blue",
+              "tags": []
+            },
+            {
+              "time": "11:45 a.m.",
+              "duration": "45 m",
+              "title": "Awards, Wrap up",
+              "description": "Courtney and Nadeem",
               "color": "blue",
               "tags": []
             }
           ]
         },
         {
-          "name": "",
+          "name": "Departure",
           "events": [
             {
-              "time": "12:05 a.m.",
-              "duration": "25 m",
-              "title": "Leadership Thoughts",
-              "description": "",
-              "color": "blue",
-              "tags": []
-            },
-            {
-              "time": "12:45 a.m.",
-              "duration": "15 m",
-              "title": "Closing Remarks",
-              "description": "",
-              "color": "blue",
-              "tags": []
+              "time": "12:30 p.m.",
+              "duration": "30 m",
+              "title": "Boxed lunch",
+              "description": "Riu Plaza Hotel",
+              "color": "green",
+              "tags": [
+                "MEAL"
+              ]
             },
             {
               "time": "1:00 p.m.",
-              "duration": "15 m",
-              "title": "Summit Picture",
-              "description": "",
-              "color": "blue",
-              "tags": []
-            }
-          ]
-        },
-        {
-          "name": "",
-          "events": [
-            {
-              "time": "1:15 p.m.",
-              "duration": "30 m",
-              "title": "Meet to board the bus for luch",
-              "description": "Fiesta Americana Hotel - Lobby",
-              "color": "yellow",
-              "tags": [
-                "SOCIAL"
-              ]
-            },
-            {
-              "time": "1:45 p.m.",
-              "duration": "1 h 15 m",
-              "title": "Lunch at Hacienda Canelo",
-              "description": "Hacienda Canelo - View Location",
-              "link": "https://maps.app.goo.gl/jKdWyQTNFRC9dE6u7",
-              "color": "green",
-              "tags": [
-                "MEAL",
-                "SOCIAL"
-              ]
-            },
-            {
-              "time": "3:00 p.m.",
-              "duration": "30 m",
-              "title": "Bus to Hotel",
-              "description": "Hacienda Canelo",
-              "color": "yellow",
-              "tags": [
-                "SOCIAL"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "events": [
-            {
-              "time": "3:30 p.m.",
-              "duration": "30 m",
-              "title": "Break",
-              "description": "",
+              "duration": "4 h",
+              "title": "Departure or Optional Working Meetings at Guadalajara Office",
+              "description": "Israel Diaz",
               "color": "gray",
-              "tags": []
-            },
-            {
-              "time": "4:00 p.m.",
-              "duration": "2 h",
-              "title": "Board Games Night",
-              "description": "Hotel - Restaurant Galería Fiesta",
-              "color": "yellow",
               "tags": [
-                "SOCIAL"
-              ]
-            },
-            {
-              "time": "6:00 p.m.",
-              "duration": "2 h",
-              "title": "Dinner",
-              "description": "Hotel - Restaurant Galería Fiesta",
-              "color": "green",
-              "tags": [
-                "MEAL"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2025-10-16T18:00:00.000Z",
-      "blocks": [
-        {
-          "name": "",
-          "events": [
-            {
-              "time": "5:00 a.m.",
-              "title": "Attendees & Sr Leadership Travel Day",
-              "allDay": true
-            }
-          ]
-        },
-        {
-          "name": "",
-          "events": [
-            {
-              "time": "7:30 a.m.",
-              "duration": "2 h 30 m",
-              "title": "Breakfast",
-              "description": "Fiesta Americana Hotel - Moxaico",
-              "color": "green",
-              "tags": [
-                "MEAL"
+                "GENERAL"
               ]
             }
           ]
