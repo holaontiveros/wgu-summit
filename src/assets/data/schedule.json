@@ -19,6 +19,16 @@
       "date": "2026-05-04T18:00:00.000Z",
       "blocks": [
         {
+          "name": "",
+          "events": [
+            {
+              "time": "5:00 a.m.",
+              "title": "Attendees Travel Day",
+              "allDay": true
+            }
+          ]
+        },
+        {
           "name": "Summit Attendees Travel Day",
           "events": [
             {
@@ -26,16 +36,6 @@
               "duration": "3 h",
               "title": "Check-in & Pick up boxed dinners",
               "description": "Riu Plaza Hotel - Lobby",
-              "color": "gray",
-              "tags": [
-                "GENERAL"
-              ]
-            },
-            {
-              "time": "4:00 p.m.",
-              "duration": "2 h",
-              "title": "In person Dry run",
-              "description": "Conference Room Guadalajara 1-5 (Main Floor)",
               "color": "gray",
               "tags": [
                 "GENERAL"
@@ -80,7 +80,7 @@
               "time": "9:00 a.m.",
               "duration": "7 m",
               "title": "Welcome / Review Agenda (Day 1)",
-              "description": "MC - Karina",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -88,7 +88,7 @@
               "time": "9:07 a.m.",
               "duration": "11 m",
               "title": "Leadership principles story",
-              "description": "Luis Chacon & Laura Jimenez",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -104,7 +104,7 @@
               "time": "9:23 a.m.",
               "duration": "12 m",
               "title": "Accelerating Tech Enabled Innovation",
-              "description": "Nadeem",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -112,7 +112,7 @@
               "time": "9:35 a.m.",
               "duration": "1 h 5 m",
               "title": "Puzzle Activity",
-              "description": "WIS Senior Managers - The Puzzle Challenge",
+              "description": "The Puzzle Challenge",
               "color": "blue",
               "tags": []
             },
@@ -128,7 +128,7 @@
               "time": "10:55 a.m.",
               "duration": "50 m",
               "title": "FY27 Vision Panel",
-              "description": "Moderated by Nadeem - Hank, Rajeev, James, John, Jennie, Chelsea, Troy",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -159,7 +159,7 @@
               "time": "1:00 p.m.",
               "duration": "15 m",
               "title": "Energizer Activity",
-              "description": "Karina/Moroni",
+              "description": "",
               "color": "blue",
               "tags": []
             }
@@ -172,7 +172,7 @@
               "time": "1:15 p.m.",
               "duration": "45 m",
               "title": "Tech Talk",
-              "description": "Chris Boyack",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -180,7 +180,7 @@
               "time": "2:00 p.m.",
               "duration": "2 h",
               "title": "AI Hackathon",
-              "description": "Chris Boyack/ Karina - pods of 8 engineers, 12 teams total - 4 different projects / categories",
+              "description": "pods of 8 engineers, 12 teams total - 4 different projects / categories",
               "color": "blue",
               "tags": []
             },
@@ -196,7 +196,7 @@
               "time": "4:15 p.m.",
               "duration": "1 h",
               "title": "Share and vote (Hackathon)",
-              "description": "Courtney and Nadeem - Pitch 10mins per team",
+              "description": "Pitch 10mins per team",
               "color": "blue",
               "tags": []
             },
@@ -204,7 +204,7 @@
               "time": "5:15 p.m.",
               "duration": "30 m",
               "title": "Winners announced for Hackathon",
-              "description": "Courtney and Nadeem - 1 winner for each project category - gift card awards",
+              "description": "1 winner for each project category - gift card awards",
               "color": "blue",
               "tags": []
             }
@@ -267,7 +267,7 @@
               "time": "8:30 a.m.",
               "duration": "15 m",
               "title": "Agenda Review and Last day recap",
-              "description": "MC - Karina - Welcome, review agenda, morning stretch/yoga",
+              "description": "Welcome, review agenda, morning stretch/yoga",
               "color": "blue",
               "tags": []
             },
@@ -288,7 +288,7 @@
               "time": "9:00 a.m.",
               "duration": "1 h 30 m",
               "title": "Breakout rooms",
-              "description": "VPs",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -304,7 +304,7 @@
               "time": "10:45 a.m.",
               "duration": "45 m",
               "title": "Tech Talk",
-              "description": "Tishya Poteet",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -312,7 +312,7 @@
               "time": "11:30 a.m.",
               "duration": "15 m",
               "title": "Lives Changed by Your Work",
-              "description": "Courtney Hills McBeth",
+              "description": "",
               "color": "blue",
               "tags": []
             },
@@ -320,7 +320,7 @@
               "time": "11:45 a.m.",
               "duration": "45 m",
               "title": "Awards, Wrap up",
-              "description": "Courtney and Nadeem",
+              "description": "",
               "color": "blue",
               "tags": []
             }
@@ -343,11 +343,26 @@
               "time": "1:00 p.m.",
               "duration": "4 h",
               "title": "Departure or Optional Working Meetings at Guadalajara Office",
-              "description": "Israel Diaz",
+              "description": "",
               "color": "gray",
               "tags": [
                 "GENERAL"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-05-07T18:00:00.000Z",
+      "blocks": [
+        {
+          "name": "Departure Day",
+          "events": [
+            {
+              "time": "5:00 a.m.",
+              "title": "Attendees Travel Day",
+              "allDay": true
             }
           ]
         }
